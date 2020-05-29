@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Le Lion, le Singe, et les deux Anes  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Le Lion, le Singe, et les deux Anes , gouverner, Voulant, apprendre, animale, celle-ci, sagement, certain, mouvement, appelle, l'auteur "/>
+	<meta name="description" content="La fable Le Lion, le Singe, et les deux Anes , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Le Lion, le Singe, et les deux Anes "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="05-le-lion--le-singe--et-les-deux-anes.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Le Lion, le Singe, et les deux Anes </h1>
+		<p class="fable">
+		Le Lion, pour bien gouverner,<br/>
+Voulant apprendre la morale,<br/>
+Se fit un beau jour amener<br/>
+Le Singe ma&icirc;tre &egrave;s arts chez la gent animale.<br/>
+La premi&egrave;re le&ccedil;on que donna le R&eacute;gent<br/>
+Fut celle-ci : Grand Roi, pour r&eacute;gner sagement,<br/>
+Il faut que tout Prince pr&eacute;f&egrave;re<br/>
+Le z&egrave;le de l'Etat &agrave; certain mouvement<br/>
+Qu'on appelle commun&eacute;ment<br/>
+Amour propre ; car c'est le p&egrave;re,<br/>
+C'est l'auteur de tous les d&eacute;fauts<br/>
+Que l'on remarque aux animaux.<br/>
+Vouloir que de tout point ce sentiment vous quitte,<br/>
+Ce n'est pas chose si petite<br/>
+Qu'on en vienne &agrave; bout en un jour :<br/>
+C'est beaucoup de pouvoir mod&eacute;rer cet amour.<br/>
+Par l&agrave;, votre personnage auguste<br/>
+N'admettra jamais rien en soi<br/>
+De ridicule ni d'injuste<br/>
+- Donne-moi, repartit le Roi,<br/>
+Des exemples de l'un et l'autre.<br/>
+- Toute esp&egrave;ce, dit le docteur,<br/>
+Toute profession s'estime dans son coeur,<br/>
+Traite les autres d'ignorantes,<br/>
+Les qualifie impertinentes,<br/>
+Et semblables discours qui ne nous coûtent rien.<br/>
+L'amour-propre, au rebours, fait qu'au degr&eacute; supr&ecirc;me<br/>
+On porte ses pareils ; car c'est un bon moyen<br/>
+De s'&eacute;lever aussi soi-m&ecirc;me.<br/>
+De tout ce que dessus j'argumente tr&egrave;s bien<br/>
+Qu'ici-bas maint talent n'est que pure grimace,<br/>
+Cabale, et certain art de se faire valoir,<br/>
+Mieux su des ignorants que des gens de savoir.<br/>
+L'autre jour, suivant &agrave; la trace<br/>
+Deux Anes qui, prenant tour &agrave; tour l'encensoir<br/>
+Se louaient tour &agrave; tour, comme c'est la mani&egrave;re,<br/>
+J'ou&iuml;s que l'un des deux disait &agrave; son confr&egrave;re :<br/>
+Seigneur, trouvez-vous pas bien injuste et bien sot<br/>
+L'homme, cet animal si parfait ? Il profane<br/>
+Notre auguste nom, traitant d'&acirc;ne<br/>
+Quiconque est ignorant, d'esprit lourd, idiot :<br/>
+Il abuse encore d'un mot,<br/>
+Et traite notre rire, et nos discours de braire.<br/>
+Les humains sont plaisants de pr&eacute;tendre exceller<br/>
+Par-dessus nous ; non, non ; c'est &agrave; vous de parler,<br/>
+A leurs Orateurs de se taire :<br/>
+Voil&agrave; les vrais braillards ; mais laissons l&agrave; ces gens :<br/>
+Vous m'entendez, je vous entends :<br/>
+Il suffit ; et quant aux merveilles<br/>
+Dont votre divin chant vient frapper les oreilles,<br/>
+Philom&egrave;le est au prix novice dans cet Art :<br/>
+Vous surpassez Lambert. L'autre Baudet repart :<br/>
+Seigneur, j'admire en vous des qualit&eacute;s pareilles.<br/>
+Ces Anes, non contents de s'&ecirc;tre ainsi gratt&eacute;s,<br/>
+S'en all&egrave;rent dans les Cit&eacute;s<br/>
+L'un l'autre se pr&ocirc;ner : chacun d'eux croyait faire,<br/>
+En prisant ses pareils, une fort bonne affaire,<br/>
+Pr&eacute;tendant que l'honneur en reviendrait sur lui.<br/>
+J'en connais beaucoup aujourd'hui,<br/>
+Non parmi les baudets, mais parmi les puissances<br/>
+Que le Ciel voulut mettre en de plus hauts degr&eacute;s,<br/>
+Qui changeraient entre eux les simples excellences,<br/>
+S'ils osaient, en des majest&eacute;s.<br/>
+J'en dis peut-&ecirc;tre plus qu'il ne faut, et suppose<br/>
+Que votre majest&eacute; gardera le secret.<br/>
+Elle avait souhait&eacute; d'apprendre quelque trait<br/>
+Qui lui fit voir entre autre chose<br/>
+L'amour propre donnant du ridicule aux gens.<br/>
+L'injuste aura son tour : il y faut plus de temps.<br/>
+Ainsi parla ce Singe. On ne m'a pas su dire<br/>
+S'il traita l'autre point ; car il est d&eacute;licat ;<br/>
+Et notre ma&icirc;tre &egrave;s Arts, qui n'&eacute;tait pas un fat,<br/>
+Regardait ce Lion comme un terrible sire.<br/>
+
+		</p>
+		<p>Extrait du Livre XI de <em>Jean de La Fontaine</em> | 73 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="04-le-songe-d-un-habitant-du-mogol.html" title="fable précédente dans ce livre">Le Songe d'un habitant ...</a>&nbsp;
+				<a class="suiv" href="06-le-loup-et-le-renard.html" title="fable suivante dans ce livre">Le Loup et le Renard </a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-8/03-le-lion--le-loup--et-le-renard.html" title="fable précédente dans l'ordre alphabétique">Le Lion, le Loup, et le ...</a>
+&nbsp;
+				<a class="suiv" href="../livre-6/13-le-lion-malade-et-le-renard.html" title="fable suivante dans l'ordre alphabétique">Le Lion malade et le ...</a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre XI</h2><ul>
+<li><a href="01-le-lion.html" title="La Fontaine, fable : Le Lion ">Le Lion </a></li><li><a href="02-les-dieux-voulant-instruire-un-fils-de-jupiter.html" title="La Fontaine, fable : Les Dieux voulant instruire un fils de Jupiter ">Les Dieux voulant instruire un fils de Jupiter </a></li><li><a href="03-le-fermier--le-chien--et-le-renard.html" title="La Fontaine, fable : Le Fermier, le Chien, et le Renard ">Le Fermier, le Chien, et le Renard </a></li><li><a href="04-le-songe-d-un-habitant-du-mogol.html" title="La Fontaine, fable : Le Songe d'un habitant du Mogol ">Le Songe d'un habitant du Mogol </a></li><li><a href="05-le-lion--le-singe--et-les-deux-anes.html" title="La Fontaine, fable : Le Lion, le Singe, et les deux Anes ">Le Lion, le Singe, et les deux Anes </a></li><li><a href="06-le-loup-et-le-renard.html" title="La Fontaine, fable : Le Loup et le Renard ">Le Loup et le Renard </a></li><li><a href="07-le-paysan-du-danube.html" title="La Fontaine, fable : Le Paysan du Danube ">Le Paysan du Danube </a></li><li><a href="08-le-vieillard-et-les-trois-jeunes-hommes.html" title="La Fontaine, fable : Le Vieillard et les trois jeunes Hommes ">Le Vieillard et les trois jeunes Hommes </a></li><li><a href="09-les-souris-et-le-chat-huant.html" title="La Fontaine, fable : Les Souris et le Chat-Huant ">Les Souris et le Chat-Huant </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

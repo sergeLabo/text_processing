@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Les Filles de Min&eacute;e  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Les Filles de Min&eacute;e , d'Ovide, l'enfance, travail, courroux, Bacchus, honneurs, humains, triomphe, l'honneur, condamner "/>
+	<meta name="description" content="La fable Les Filles de Min&eacute;e , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Les Filles de Min&eacute;e "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="28-les-filles-de-minee.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Les Filles de Min&eacute;e </h1>
+		<p class="fable">
+		Sujet tir&eacute; des M&eacute;tamorphoses d'Ovide<br/>
+Je chante dans ces vers les filles de Min&eacute;e,<br/>
+Troupe aux arts de Pallas d&egrave;s l'enfance adonn&eacute;e,<br/>
+Et de qui le travail fit entrer en courroux<br/>
+Bacchus, &agrave; juste droit de ses honneurs jaloux.<br/>
+Tout dieu veut aux humains se faire reconna&icirc;tre :<br/>
+On ne voit point les champs r&eacute;pondre aux soins du ma&icirc;tre,<br/>
+Si dans les jours sacr&eacute;s, autour de ses gu&eacute;rets,<br/>
+Il ne marche en triomphe &agrave; l'honneur de C&eacute;r&egrave;s.<br/>
+La Gr&egrave;ce &eacute;tait en jeux pour le fils de S&eacute;m&egrave;le ;<br/>
+Seules on vit trois soeurs condamner ce saint z&egrave;le.<br/>
+Alcitho&eacute;, l'a&icirc;n&eacute;e, ayant pris ses fuseaux,<br/>
+Dit aux autres : Quoi donc ! toujours les dieux nouveaux !<br/>
+L'Olympe ne peut plus contenir tant de t&ecirc;tes,<br/>
+Ni l'an fournir de jours assez pour tant de f&ecirc;tes.<br/>
+Je ne dis rien des voeux dus aux travaux divers<br/>
+De ce dieu qui purgea de monstres l'univers :<br/>
+Mais &agrave; quoi sert Bacchus, qu'&agrave; causer des querelles ?<br/>
+Affaiblir les plus sains ? enlaidir les plus belles ?<br/>
+Souvent mener au Styx par de tristes chemins ?<br/>
+Et nous irions chommer la peste des humains ?<br/>
+Pour moi, j'ai r&eacute;solu de poursuivre ma t&acirc;che.<br/>
+Se donne qui voudra ce jour-ci du rel&acirc;che :<br/>
+Ces mains n'en prendront point. Je suis encor d'avis<br/>
+Que nous rendions le temps moins long par des r&eacute;cits :<br/>
+Toutes trois, tour &agrave; tour, racontons quelque histoire.<br/>
+Je pourrais retrouver sans peine en ma m&eacute;moire<br/>
+Du monarque des dieux les divers changements ;<br/>
+Mais, comme chacun sait tous ces &eacute;v&eacute;nements,<br/>
+Disons ce que l'amour inspire &agrave; nos pareilles,<br/>
+Non toutefois qu'il faille, en contant ses merveilles,<br/>
+Accoutumer nos coeurs &agrave; goûter son poison ;<br/>
+Car, ainsi que Bacchus, il trouble la raison :<br/>
+R&eacute;citons-nous les maux que ses biens nous attirent.<br/>
+Alcitho&eacute; se tut, et ses soeurs applaudirent.<br/>
+Apr&egrave;s quelques moments, haussant un peu la voix :<br/>
+Dans Th&egrave;bes, reprit-elle, on conte qu'autrefois<br/>
+Deux jeunes coeurs s'aimaient d'une &eacute;gale tendresse :<br/>
+Pirame, c'est l'amant, eut Thisb&eacute; pour ma&icirc;tresse.<br/>
+Jamais couple ne fut si bien assorti qu'eux :<br/>
+L'un bien fait, l'autre belle, agr&eacute;ables tous deux,<br/>
+Tous deux dignes de plaire, ils s'aim&egrave;rent sans peine ;<br/>
+D'autant plus t&ocirc;t &eacute;pris, qu'une invincible haine<br/>
+Divisant leurs parents ces deux amants unit,<br/>
+Et concourut aux traits dont l'Amour se servit.<br/>
+Le hasard, non le choix, avait rendu voisines<br/>
+Leurs maisons, o&ugrave; r&eacute;gnaient ces guerres intestines :<br/>
+Ce fut un avantage &agrave; leurs d&eacute;sirs naissants.<br/>
+Le cours en commen&ccedil;a par des jeux innocents :<br/>
+La premi&egrave;re &eacute;tincelle eut embras&eacute; leur &acirc;me,<br/>
+Qu'ils ignoraient encor ce que c'&eacute;tait que flamme.<br/>
+Chacun favorisait leurs transports mutuels,<br/>
+Mais c'&eacute;tait &agrave; l'insu de leurs parents cruels.<br/>
+La d&eacute;fense est un charme : on dit qu'elle assaisonne<br/>
+Les plaisirs, et surtout ceux que l'amour nous donne.<br/>
+D'un des logis &agrave; l'autre, elle instruisit du moins<br/>
+Nos amants &agrave; se dire avec signes leurs soins.<br/>
+Ce l&eacute;ger r&eacute;confort ne les put satisfaire ;<br/>
+Il fallut recourir &agrave; quelque autre myst&egrave;re.<br/>
+Un vieux mur entr'ouvert s&eacute;parait leurs maisons ;<br/>
+Le temps avait min&eacute; ses antiques cloisons :<br/>
+L&agrave; souvent de leurs maux ils d&eacute;ploraient la cause ;<br/>
+Les paroles passaient, mais c'&eacute;tait peu de chose.<br/>
+Se plaignant d'un tel sort, Pirame dit un jour :<br/>
+Ch&egrave;re Thisb&eacute;, le Ciel veut qu'on s'aide en amour ;<br/>
+Nous avons &agrave; nous voir une peine infinie :<br/>
+Fuyons de nos parents l'injuste tyrannie.<br/>
+J'en ai d'autres en Gr&egrave;ce ; ils se tiendront heureux<br/>
+Que vous daignez chercher un asile chez eux ;<br/>
+Leur amiti&eacute;, leurs biens, leur pouvoir, tout m'invite<br/>
+A prendre le parti dont je vous sollicite.<br/>
+C'est votre seul repos qui me le fait choisir,<br/>
+Car je n'ose parler, h&eacute;las ! de mon d&eacute;sir.<br/>
+Faut-il croire &agrave; votre sacrifice,<br/>
+De crainte de vains bruits faut-il que je languisse ?<br/>
+Ordonnez, j'y consens ; tout me semblera doux ;<br/>
+Je vous aime, Thisb&eacute;, moins pour moi que pour vous.<br/>
+- J'en pourrais dire autant, lui repartit l'Amante :<br/>
+Votre amour &eacute;tant pure, encor que v&eacute;h&eacute;mente,<br/>
+Je vous suivrai partout ; notre commun repos<br/>
+Me doit mettre au-dessus de tous les vains propos ;<br/>
+Tant que de ma vertu je serai satisfaite,<br/>
+Je rirai des discours d'une langue indiscr&egrave;te,<br/>
+Et m'abandonnerai sans crainte &agrave; votre ardeur,<br/>
+Contente que je suis des soins de ma pudeur.<br/>
+Jugez ce que sentit Pirame &agrave; ces paroles ,<br/>
+Je n'en fais point ici de peintures frivoles :<br/>
+Suppl&eacute;ez au peu d'art que le Ciel mit en moi ;<br/>
+Vous-m&ecirc;mes peignez-vous cet amant hors de soi.<br/>
+Demain, dit-il, il faut sortir avant l'Aurore ;<br/>
+N'attendez point les traits que son char fait &eacute;clore.<br/>
+Trouvez-vous aux degr&eacute;s du Terme de C&eacute;r&egrave;s ;<br/>
+L&agrave;, nous nous attendrons ; le rivage est tout pr&egrave;s,<br/>
+Une barque est au bord ; les rameurs, le vent m&ecirc;me.<br/>
+Tout pour notre d&eacute;part montre une h&acirc;te extr&ecirc;me ;<br/>
+L'augure en est heureux, notre sort va changer ;<br/>
+Et les dieux sont pour nous, si je sais bien juger.<br/>
+Thisb&eacute; consent &agrave; tout ; elle en donne pour gage<br/>
+Deux baisers, par le mur arr&ecirc;t&eacute;s au passage,<br/>
+Heureux mur ! tu devais servir mieux leur d&eacute;sir :<br/>
+Ils n'obtinrent de toi qu'une ombre de plaisir.<br/>
+Le lendemain, Thisb&eacute; sort, et pr&eacute;vient Pirame ;<br/>
+L'impatience, h&eacute;las ! ma&icirc;tresse de son &acirc;me,<br/>
+La fait arriver seule et sans guide aux degr&eacute;s.<br/>
+L'ombre et le jour luttaient dans les champs azur&eacute;s.<br/>
+Une lionne vient, monstre imprimant la crainte ;<br/>
+D'un carnage r&eacute;cent sa gueule est toute teinte.<br/>
+Thisb&eacute; fuit ; et son voile, emport&eacute; par les airs,<br/>
+Source d'un sort cruel, tombe dans ces d&eacute;serts.<br/>
+La lionne le voit, le souille, le d&eacute;chire ;<br/>
+Et, l'ayant teint de sang, aux for&ecirc;ts se retire.<br/>
+Thisb&eacute; s'&eacute;tait cach&eacute;e en un buisson &eacute;pais.<br/>
+Pirame arrive, et voit ces vestiges tout frais :<br/>
+O dieux ! que devient-il ? Un froid court dans ses veines ;<br/>
+Il aper&ccedil;oit le voile &eacute;tendu dans ces plaines ;<br/>
+Il se l&egrave;ve ; et le sang, joint aux traces des pas,<br/>
+L'emp&ecirc;che de douter d'un funeste tr&eacute;pas.<br/>
+Thisb&eacute; ! s'&eacute;cria-t-il, Thisb&eacute;, je t'ai perdue !<br/>
+Te voil&agrave;, par ma faute, aux Enfers descendue !<br/>
+Je l'ai voulu : c'est moi qui suis le monstre affreux<br/>
+Par qui tu t'en vas voir le s&eacute;jour t&eacute;n&eacute;breux :<br/>
+Attends-moi, je te vais rejoindre aux rives sombres ;<br/>
+Mais m'oserai-je &agrave; toi pr&eacute;senter chez les ombres ?<br/>
+Jouis au moins du sang que je te vais offrir,<br/>
+Malheureux de n'avoir qu'une mort &agrave; souffrir.<br/>
+Il dit, et d'un poignard coupe aussit&ocirc;t sa trame.<br/>
+Thisb&eacute; vient ; Thisb&eacute; voit tomber son cher Pirame.<br/>
+Que devint-elle aussi ? Tout lui manque &agrave; la fois,<br/>
+Le sens et les esprits, aussi bien que la voix.<br/>
+Elle revient enfin ; Clothon, pour l'amour d'elle,<br/>
+Laisse &agrave; Pirame ouvrir sa mourante prunelle.<br/>
+Il ne regarde point la lumi&egrave;re des cieux ;<br/>
+Sur Thisb&eacute; seulement il tourne encor les yeux.<br/>
+Il voudrait lui parler, sa langue est retenue :<br/>
+Il t&eacute;moigne mourir content de l'avoir vue.<br/>
+Thisb&eacute; prend le poignard ; et, d&eacute;couvrant son sein :<br/>
+Je n'accuserai point, dit-elle, ton dessein,<br/>
+Bien moins encor l'erreur de ton &acirc;me alarm&eacute;e :<br/>
+Ce serait t'accuser de m'avoir trop aim&eacute;e.<br/>
+Je ne t'aime pas moins : tu vas voir que mon coeur<br/>
+N'a, non plus que le tien, m&eacute;rit&eacute; son malheur.<br/>
+Cher Amant ! re&ccedil;ois donc ce triste sacrifice.<br/>
+Sa main et le poignard font alors leur office ;<br/>
+Elle tombe, et, tombant range ses v&ecirc;tements :<br/>
+Dernier trait de pudeur m&ecirc;me aux derniers moments.<br/>
+Les Nymphes d'alentour lui donn&egrave;rent des larmes,<br/>
+Et du sang des Amants teignirent par des charmes<br/>
+Le fruit d'un mûrier proche, et blanc jusqu'&agrave; ce jour,<br/>
+Eternel monument d'un si parfait amour.<br/>
+Cette histoire attendrit les filles de Min&eacute;e.<br/>
+L'une accusait l'Amant, l'autre la Destin&eacute;e ;<br/>
+Et toute d'une voix conclurent que nos coeurs<br/>
+De cette passion devraient &ecirc;tre vainqueurs :<br/>
+Elle meurt quelquefois avant qu'&ecirc;tre contente ;<br/>
+L'est-elle, elle devient aussit&ocirc;t languissante ;<br/>
+Sans l'hymen on n'en doit recueillir aucun fruit,<br/>
+Et cependant l'hymen est ce qui la d&eacute;truit.<br/>
+Il y joint, dit Clym&egrave;ne, une &acirc;pre jalousie,<br/>
+Poison le plus cruel dont l'&acirc;me soit saisie :<br/>
+Je n'en veux pour t&eacute;moin que l'erreur de Procris.<br/>
+Alcitho&eacute; ma soeur, attachant vos esprits,<br/>
+Des tragiques amours vous a cont&eacute; l'&eacute;lite :<br/>
+Celles que je vais dire ont aussi leur m&eacute;rite.<br/>
+J'accourcirai le temps, ainsi qu'elle, &agrave; mon tour.<br/>
+Peu s'en faut que Ph&eacute;bus ne partage le jour ;<br/>
+A ses rayons per&ccedil;ants opposons quelques voiles.<br/>
+Voyons combien nos mains ont avanc&eacute; nos toiles :<br/>
+Je veux que, sur la mienne, avant que d'&ecirc;tre au soir,<br/>
+Un progr&egrave;s tout nouveau se fasse apercevoir.<br/>
+Cependant donnez-moi quelque heure de silence :<br/>
+Ne vous rebutez point de mon peu d'&eacute;loquence ;<br/>
+Souffrez-en les d&eacute;fauts, et songez seulement<br/>
+Au fruit qu'on peut tirer de cet &eacute;v&eacute;nement.<br/>
+C&eacute;phale aimait Procris ; il &eacute;tait aim&eacute; d'elle :<br/>
+Chacun se proposait leur hymen pour mod&egrave;le.<br/>
+Ce qu'Amour fait sentir de piquant et de doux<br/>
+Comblait abondamment les voeux de ces Epoux.<br/>
+Ils ne s'aimaient que trop ! leurs soins et leur tendresse<br/>
+Approchaient des transports d'Amant et de Ma&icirc;tresse.<br/>
+Le Ciel m&ecirc;me envia cette f&eacute;licit&eacute; :<br/>
+C&eacute;phale eut &agrave; combattre une Divinit&eacute;.<br/>
+Il &eacute;tait jeune et beau ; l'Aurore en fut charm&eacute;e,<br/>
+N'&eacute;tant pas &agrave; ces biens chez elle accoutum&eacute;e.<br/>
+Nos belles cacheraient un pareil sentiment :<br/>
+Chez les Divinit&eacute;s on en use autrement.<br/>
+Celle-ci d&eacute;clara ses pensers &agrave; C&eacute;phale ;<br/>
+Il eut beau lui parler de la foi conjugale :<br/>
+Les jeunes D&eacute;it&eacute;s qui n'ont qu'un vieil Epoux<br/>
+Ne se soumettent point &agrave; ces lois comme nous :<br/>
+La D&eacute;esse enleva ce H&eacute;ros si fid&egrave;le.<br/>
+De mod&eacute;rer ces feux il pria l'Immortelle :<br/>
+Elle le fit ; l'amour devint simple amiti&eacute;.<br/>
+Retournez, dit l'Aurore, avec votre moiti&eacute; ;<br/>
+Je ne troublerai plus votre ardeur ni la sienne :<br/>
+Recevez seulement ces marques de la mienne.<br/>
+Un jour cette Procris qui ne vit que pour vous<br/>
+Fera le d&eacute;sespoir de votre &acirc;me charm&eacute;e,<br/>
+Et vous aurez regret de l'avoir tant aim&eacute;e.<br/>
+Tout oracle est douteux, et porte un double sens :<br/>
+Celui-ci mit d'abord notre Epoux en suspens.<br/>
+J'aurai regret aux voeux que j'ai form&eacute;s pour elle !<br/>
+Et comment ? n'est-ce point qu'elle m'est infid&egrave;le ?<br/>
+Ah ! finissent mes jours plut&ocirc;t que de le voir !<br/>
+Eprouvons toutefois ce que peut son devoir.<br/>
+Des Mages aussit&ocirc;t consultant la science,<br/>
+D'un feint adolescent il prend la ressemblance,<br/>
+S'en va trouver Procris, &eacute;l&egrave;ve jusqu'aux Cieux<br/>
+Ses beaut&eacute;s, qu'il soutient &ecirc;tre dignes des Dieux ;<br/>
+Joint les pleurs aux soupirs, comme un Amant sait faire,<br/>
+Et ne peut s'&eacute;claircir par cet art ordinaire.<br/>
+Il fallut recourir &agrave; ce qui porte coup,<br/>
+Aux pr&eacute;sents : il offrit, donna, promit beaucoup,<br/>
+Promit tant, que Procris lui parut incertaine ;<br/>
+Toute chose a son prix. Voil&agrave; C&eacute;phale en peine :<br/>
+Il renonce aux cit&eacute;s, s'en va dans les for&ecirc;ts,<br/>
+Conte aux vents, conte aux bois ses d&eacute;plaisirs secrets,<br/>
+S'imagine en chassant dissiper son martyre.<br/>
+C'&eacute;tait pendant ces mois o&ugrave; le chaud qu'on respire<br/>
+Oblige d'implorer l'haleine des Z&eacute;phirs.<br/>
+Doux Vents, s'&eacute;criait-il, pr&ecirc;tez-moi des soupirs !<br/>
+Venez, l&eacute;gers D&eacute;mons par qui nos champs fleurissent ;<br/>
+Aure, fais-les venir ; je sais qu'ils t'ob&eacute;issent :<br/>
+Ton emploi dans ces lieux est de tout ranimer.<br/>
+On l'entendit : on crut qu'il venait de nommer<br/>
+Quelque objet de ses voeux, autre que son Epouse.<br/>
+Elle en est avertie ; et la voil&agrave; jalouse.<br/>
+Maint voisin charitable entretient ses ennuis.<br/>
+Je ne le puis plus voir, dit-elle, que les nuits !<br/>
+Il aime donc cette Aure, et me quitte pour elle ?<br/>
+- Nous vous plaignons ; il l'aime, et sans cesse il l'appelle :<br/>
+Les &eacute;chos de ces lieux n'ont plus d'autres emplois<br/>
+Que celui d'enseigner le nom d'Aure &agrave; nos bois ;<br/>
+Dans tous les environs le nom d'Aure r&eacute;sonne.<br/>
+Profitez d'un avis qu'en passant on vous donne :<br/>
+L'int&eacute;r&ecirc;t qu'on y prend est de vous obliger.<br/>
+Elle en profite, h&eacute;las ! et ne fait qu'y songer.<br/>
+Les Amants sont toujours de l&eacute;g&egrave;re croyance.<br/>
+S'ils pouvaient conserver un rayon de prudence,<br/>
+Ils seraient aux rapports insensibles et sourds ;<br/>
+Notre Epouse ne fut l'une ni l'autre chose.<br/>
+Elle se l&egrave;ve un jour ; et lorsque tout repose,<br/>
+Que de l'aube au teint frais la charmante douceur<br/>
+Force tout au sommeil, hormis quelque chasseur,<br/>
+Elle cherche C&eacute;phale : un bois l'offre &agrave; sa vue.<br/>
+Il invoquait d&eacute;j&agrave; cette Aure pr&eacute;tendue :<br/>
+Viens me voir, disait-il, ch&egrave;re D&eacute;esse, accours !<br/>
+Je n'en puis plus, je meurs ; fais que par ton secours<br/>
+La peine que je sens se trouve soulag&eacute;e.<br/>
+L'&eacute;pouse se pr&eacute;tend par ces mots outrag&eacute;e :<br/>
+Elle croit y trouver, non le sens qu'ils cachaient,<br/>
+Mais celui seulement que ses soup&ccedil;ons cherchaient.<br/>
+O triste jalousie ! &ocirc; passion am&egrave;re !<br/>
+Fille d'un fol amour, que l'erreur a pour m&egrave;re !<br/>
+Ce qu'on voit par tes yeux cause assez d'embarras<br/>
+Sans voir encore par eux ce que l'on ne voit pas !<br/>
+Procris s'&eacute;tait cach&eacute;e en la m&ecirc;me retraite<br/>
+Qu'un fan de biche avait pour demeure secr&egrave;te.<br/>
+Il en sort ; et le bruit trompe aussit&ocirc;t l'Epoux.<br/>
+C&eacute;phale prend le dard toujours sûr de ses coups,<br/>
+Le lance en cet endroit, et perce sa jalouse :<br/>
+Malheureux assassin d'une si ch&egrave;re Epouse !<br/>
+Un cri lui fait d'abord soup&ccedil;onner quelque erreur ;<br/>
+Il accourt, voit sa faute ; et, tout plein de fureur,<br/>
+Du m&ecirc;me javelot il veut s'&ocirc;ter la vie.<br/>
+L'Aurore et les Destins arr&ecirc;tent cette envie ;<br/>
+Cet office lui fut plus cruel qu'indulgent :<br/>
+L'infortun&eacute; Mari sans cesse s'affligeant<br/>
+Eût accru par ses pleurs le nombre des fontaines,<br/>
+Si la d&eacute;esse enfin, pour terminer ses peines,<br/>
+N'eût obtenu du Sort que l'on tranch&acirc;t ses jours :<br/>
+Triste fin d'un hymen bien divers en son cours !<br/>
+Fuyons ce noeud, mes soeurs, je ne puis trop le dire :<br/>
+Jugez par le meilleur quel peut &ecirc;tre le pire.<br/>
+S'il ne nous est permis d'aimer que sous ses lois,<br/>
+N'aimons point. Ce dessein fut pris par toutes trois.<br/>
+Toutes trois, pour chasser de si tristes pens&eacute;es,<br/>
+A revoir leur travail se montrent empress&eacute;es.<br/>
+Clym&egrave;ne, en un tissu riche, p&eacute;nible et grand,<br/>
+Avait presque achev&eacute; le fameux diff&eacute;rend<br/>
+D'entre le dieu des eaux et Pallas la savante.<br/>
+On voyait en lointain une ville naissante ;<br/>
+L'honneur de la nommer, entre eux deux contest&eacute;,<br/>
+D&eacute;pendait du pr&eacute;sent de chaque d&eacute;it&eacute;.<br/>
+Neptune fit le sien d'un symbole de guerre :<br/>
+Un coup de son trident fit sortir de la terre<br/>
+Un animal fougueux, un Coursier plein d'ardeur :<br/>
+Chacun de ce pr&eacute;sent admirait la grandeur.<br/>
+Minerve l'effa&ccedil;a, donnant &agrave; la contr&eacute;e<br/>
+L'Olivier, qui de paix est la marque assur&eacute;e.<br/>
+Elle emporta le prix, et nomma la cit&eacute; :<br/>
+Ath&egrave;ne offrit ses voeux &agrave; cette d&eacute;it&eacute; ;<br/>
+Pour les lui pr&eacute;senter on choisit cent pucelles,<br/>
+Toutes sachant broder, aussi sages que belles.<br/>
+Les premi&egrave;res portaient force pr&eacute;sents divers ;<br/>
+Tout le reste entourait la d&eacute;esse aux yeux pers ;<br/>
+Avec un doux souris elle acceptait l'hommage.<br/>
+Clym&egrave;ne ayant enfin reploy&eacute; son ouvrage,<br/>
+La jeune Iris commence en ces mots son r&eacute;cit :<br/>
+Rarement pour les pleurs mon talent r&eacute;ussit ;<br/>
+Je suivrai toutefois la mati&egrave;re impos&eacute;e.<br/>
+T&eacute;lamon pour Cloris avait l'&acirc;me embras&eacute;e,<br/>
+Cloris pour T&eacute;lamon brûlait de son c&ocirc;t&eacute;.<br/>
+La naissance, l'esprit, les gr&acirc;ces, la beaut&eacute;,<br/>
+Tout se trouvait en eux, hormis ce que les hommes<br/>
+Font marcher avant tout dans ce si&egrave;cle o&ugrave; nous sommes :<br/>
+Ce sont les biens, c'est l'or, m&eacute;rite universel.<br/>
+Ces Amants, quoique &eacute;pris d'un d&eacute;sir mutuel,<br/>
+N'osaient au blond Hymen sacrifier encore,<br/>
+Faute de ce m&eacute;tal que tout le monde adore.<br/>
+Amour s'en passerait ; l'autre &eacute;tat ne le peut :<br/>
+Soit raison, soit abus, le Sort ainsi le veut.<br/>
+Cette loi, qui corrompt les douceurs de la vie,<br/>
+Fut par le jeune Amant d'une autre erreur suivie.<br/>
+Le D&eacute;mon des Combats vint troubler l'Univers :<br/>
+Un Pays contest&eacute; par des Peuples divers<br/>
+Engagea T&eacute;lamon dans un dur exercice ;<br/>
+Il quitta pour un temps l'amoureuse milice.<br/>
+Cloris y consentit, mais non pas sans douleur :<br/>
+Il voulut m&eacute;riter son estime et son coeur.<br/>
+Pendant que ses exploits terminent la querelle,<br/>
+Un parent de Cloris meurt, et laisse &agrave; la belle<br/>
+D'amples possessions et d'immenses tr&eacute;sors.<br/>
+Il habitait les lieux o&ugrave; Mars r&eacute;gnait alors.<br/>
+La belle s'y transporte ; et partout r&eacute;v&eacute;r&eacute;e,<br/>
+Partout des deux partis Cloris consid&eacute;r&eacute;e,<br/>
+Voit de ses propres yeux les champs o&ugrave; T&eacute;lamon<br/>
+Venait de consacrer un troph&eacute;e &agrave; son nom.<br/>
+Lui de sa part accourt ; et, tout couvert de gloire,<br/>
+Il offre &agrave; ses amours les fruits de sa victoire.<br/>
+Leur rencontre se fit non loin de l'&eacute;l&eacute;ment<br/>
+Qui doit &ecirc;tre &eacute;vit&eacute; de tout heureux amant.<br/>
+D&egrave;s ce jour l'&acirc;ge d'or les eût joints sans myst&egrave;re ;<br/>
+L'&acirc;ge de fer en tout a coutume d'en faire.<br/>
+Cloris ne voulut donc couronner tous ces biens<br/>
+Qu'au sein de sa patrie, et de l'aveu des siens.<br/>
+Tout chemin, hors la mer, allongeant leur souffrance,<br/>
+Ils commettent aux flots cette douce esp&eacute;rance.<br/>
+Z&eacute;phyre les suivait quand, presque en arrivant,<br/>
+Un pirate survient, prend le dessus du vent,<br/>
+Les attaque, les bat. En vain, par sa vaillance,<br/>
+T&eacute;lamon jusqu'au bout porte la r&eacute;sistance :<br/>
+Apr&egrave;s un long combat son parti fut d&eacute;fait,<br/>
+Lui pris ; et ses efforts n'eurent pour tout effet<br/>
+Qu'un esclavage indigne. O dieux ! qui l'eût pu croire ?<br/>
+Le sort, sans respecter ni son sang ni sa gloire,<br/>
+Ni son bonheur prochain, ni les voeux de Cloris,<br/>
+Le fit &ecirc;tre for&ccedil;at aussit&ocirc;t qu'il fut pris.<br/>
+Le Destin ne fut pas &agrave; Cloris si contraire.<br/>
+Un c&eacute;l&egrave;bre Marchand l'ach&egrave;te du Corsaire :<br/>
+Il l'emm&egrave;ne ; et bient&ocirc;t la Belle, malgr&eacute; soi,<br/>
+Au milieu de ses fers range tout sous sa loi.<br/>
+L'Epouse du Marchand la voit avec tendresse.<br/>
+Ils en font leur Compagne, et leur fils sa Ma&icirc;tresse.<br/>
+Chacun veut cet hymen : Cloris &agrave; leurs d&eacute;sirs<br/>
+R&eacute;pondait seulement par de profonds soupirs.<br/>
+Damon, c'&eacute;tait ce fils, lui tient ce doux langage :<br/>
+Vous soupirez toujours, toujours votre visage<br/>
+Baign&eacute; de pleurs nous marque un d&eacute;plaisir secret.<br/>
+Qu'avez-vous ? vos beaux yeux verraient-ils &agrave; regret<br/>
+Ce que peuvent leurs traits et l'exc&egrave;s de ma flamme ?<br/>
+Rien ne vous force ici ; d&eacute;couvrez-nous votre &acirc;me :<br/>
+Cloris, c'est moi qui suis l'esclave, et non pas vous.<br/>
+Ces lieux, &agrave; votre gr&eacute;, n'ont-ils rien d'assez doux ?<br/>
+Parlez ; nous sommes pr&ecirc;ts &agrave; changer de demeure :<br/>
+Mes parents m'ont promis de partir tout &agrave; l'heure.<br/>
+Regrettez-vous les biens que vous avez perdus ?<br/>
+Tout le n&ocirc;tre est &agrave; vous ; ne le d&eacute;daignez plus.<br/>
+J'en sais qui l'agr&eacute;eraient ; j'ai su plaire &agrave; plus d'une ;<br/>
+Pour vous, vous m&eacute;ritez toute une autre fortune.<br/>
+Quelle que soit la n&ocirc;tre, usez-en ; vous voyez<br/>
+Ce que nous poss&eacute;dons, et nous-m&ecirc;me &agrave; vos pieds.<br/>
+Ainsi parle Damon ; et Cloris tout en larmes<br/>
+Lui r&eacute;pond en ces mots, accompagn&eacute;s de charmes :<br/>
+Vos moindres qualit&eacute;s, et cet heureux s&eacute;jour<br/>
+M&ecirc;me aux filles des dieux donneraient de l'amour ;<br/>
+Jugez donc si Cloris, esclave et malheureuse,<br/>
+Voit l'offre de ces biens d'une &acirc;me d&eacute;daigneuse.<br/>
+Je sais quel est leur prix : mais de les accepter,<br/>
+Je ne puis ; et voudrais vous pouvoir &eacute;couter ;<br/>
+Ce qui me le d&eacute;fend, ce n'est point l'esclavage :<br/>
+Si toujours la naissance &eacute;leva mon courage,<br/>
+Je me vois, gr&acirc;ce aux Dieux, en des mains o&ugrave; je puis<br/>
+Garder ces sentiments malgr&eacute; tous mes ennuis ;<br/>
+Je puis m&ecirc;me avouer (h&eacute;las ! faut-il le dire ?)<br/>
+Qu'un autre a sur mon coeur conserv&eacute; son empire.<br/>
+Je ch&eacute;ris un Amant, ou mort, ou dans les fers ;<br/>
+Je pr&eacute;tends le ch&eacute;rir encor dans les enfers.<br/>
+Pourriez-vous estimer le coeur d'une inconstante ?<br/>
+Je ne suis d&eacute;j&agrave; plus aimable ni charmante ;<br/>
+Cloris n'a plus ces traits que l'on trouvait si doux,<br/>
+Et doublement esclave est indigne de vous.<br/>
+Touch&eacute; de ce discours, Damon prend cong&eacute; d'elle.<br/>
+Fuyons, dit-il en soi ; j'oublierai cette Belle :<br/>
+Tout passe, et m&ecirc;me un jour ses larmes passeront :<br/>
+Voyons ce que l'absence et le temps produiront.<br/>
+A ces mots il s'embarque ; et, quittant le rivage,<br/>
+Il court de mer en mer, aborde en lieu sauvage,<br/>
+Trouve des malheureux de leurs fers &eacute;chapp&eacute;s,<br/>
+Et sur le bord d'un bois &agrave; chasser occup&eacute;s.<br/>
+T&eacute;lamon, de ce nombre, avait bris&eacute; sa cha&icirc;ne :<br/>
+Aux regards de Damon il se pr&eacute;sente &agrave; peine,<br/>
+Que son air, sa fiert&eacute;, son esprit, tout enfin<br/>
+Fait qu'&agrave; l'abord Damon admire son destin ;<br/>
+Puis le plaint, puis l'emm&egrave;ne, et puis lui dit sa flamme.<br/>
+D'une Esclave, dit-il, je n'ai pu toucher l'&acirc;me :<br/>
+Elle ch&eacute;rit un mort ! Un mort ! ce qui n'est plus<br/>
+L'emporte dans son coeur ! mes voeux sont superflus.<br/>
+L&agrave;-dessus, de Cloris il lui fait la peinture.<br/>
+T&eacute;lamon dans son &acirc;me admire l'aventure,<br/>
+Dissimule, et se laisse emmener au s&eacute;jour<br/>
+O&ugrave; Cloris lui conserve un si parfait amour.<br/>
+Comme il voulait cacher avec soin sa fortune,<br/>
+Nulle peine pour lui n'&eacute;tait vile et commune.<br/>
+On apprend leur retour et leur d&eacute;barquement ;<br/>
+Cloris, se pr&eacute;sentant &agrave; l'un et l'autre Amant,<br/>
+Reconna&icirc;t T&eacute;lamon sous un faix qui l'accable.<br/>
+Ses chagrins le rendaient pourtant m&eacute;connaissable ;<br/>
+Un oeil indiff&eacute;rent &agrave; le voir eût err&eacute;,<br/>
+Tant la peine et l'amour l'avaient d&eacute;figur&eacute; !<br/>
+Le fardeau qu'il portait ne fut qu'un vain obstacle,<br/>
+Cloris le reconna&icirc;t, et tombe &agrave; ce spectacle :<br/>
+Elle perd tous ses sens et de honte et d'amour<br/>
+T&eacute;lamon, d'autre part, tombe presque &agrave; son tour.<br/>
+On demande &agrave; Cloris la cause de sa peine :<br/>
+Elle la dit ; ce fut sans s'attirer de haine.<br/>
+Son r&eacute;cit ing&eacute;nu redoubla la piti&eacute;<br/>
+Dans des coeurs pr&eacute;venus d'une juste amiti&eacute;.<br/>
+Damon dit que son z&egrave;le avait chang&eacute; de face :<br/>
+On le crut. Cependant, quoi qu'on dise et qu'on fasse,<br/>
+D'un triomphe si doux l'honneur et le plaisir<br/>
+Ne se perd qu'en laissant des restes de d&eacute;sir.<br/>
+On crut pourtant Damon. Il restreignit son z&egrave;le<br/>
+A sceller de l'Hymen une union si belle ;<br/>
+Et, par un sentiment &agrave; qui rien n'est &eacute;gal,<br/>
+Il pria ses parents de doter son rival :<br/>
+Il l'obtint, renon&ccedil;ant d&egrave;s lors &agrave; l'Hym&eacute;n&eacute;e.<br/>
+Le soir &eacute;tant venu de l'heureuse journ&eacute;e,<br/>
+Les noces se faisaient &agrave; l'ombre d'un ormeau ;<br/>
+L'enfant d'un voisin vit s'y percher un corbeau :<br/>
+Il fait partir de l'arc une fl&egrave;che maudite,<br/>
+Perce les deux &eacute;poux d'une atteinte subite.<br/>
+Cloris mourut du coup, non sans que son Amant<br/>
+Attir&acirc;t ses regards en ce dernier moment.<br/>
+Il s'&eacute;crie, en voyant finir ses destin&eacute;es :<br/>
+Quoi ! la Parque a tranch&eacute; le cours de ses ann&eacute;es !<br/>
+Dieux, qui l'avez voulu, ne suffisait-il pas<br/>
+Que la haine du Sort avan&ccedil;&acirc;t mon tr&eacute;pas ?<br/>
+En achevant ces mots, il acheva de vivre :<br/>
+Son amour, non le coup, l'obligea de la suivre :<br/>
+Bless&eacute; l&eacute;g&egrave;rement, il passa chez les morts :<br/>
+Le Styx vit nos Epoux accourir sur ses bords.<br/>
+M&ecirc;me accident finit leurs pr&eacute;cieuses trames ;<br/>
+M&ecirc;me tombe eut leurs corps, m&ecirc;me s&eacute;jour leurs &acirc;mes.<br/>
+Quelques-uns ont &eacute;crit (mais ce fait est peu sûr)<br/>
+Que chacun d'eux devint statue et marbre dur :<br/>
+Le couple infortun&eacute; face &agrave; face repose.<br/>
+Je ne garantis point cette m&eacute;tamorphose :<br/>
+On en doute. - On la croit plus que vous ne pensez,<br/>
+Dit Clim&egrave;ne ; et, cherchant dans les si&egrave;cles pass&eacute;s<br/>
+Quelque exemple d'amour et de vertu parfaite,<br/>
+Tout ceci me fut dit par un sage Interpr&egrave;te.<br/>
+J'admirai, je plaignis ces Amants malheureux :<br/>
+On les allait unir ; tout concourait pour eux ;<br/>
+Ils touchaient au moment ; l'attente en &eacute;tait sûre :<br/>
+H&eacute;las ! il n'en est point de telle en la nature ;<br/>
+Sur le point de jouir tout s'enfuit de nos mains :<br/>
+Les Dieux se font un jeu de l'espoir des humains.<br/>
+- Laissons, reprit Iris, cette triste pens&eacute;e.<br/>
+La F&ecirc;te est vers sa fin, gr&acirc;ce au Ciel, avanc&eacute;e ;<br/>
+Et nous avons pass&eacute; tout ce temps en r&eacute;cits<br/>
+Capables d'affliger les moins sombres esprits :<br/>
+Effa&ccedil;ons, s'il se peut, leur image funeste.<br/>
+Je pr&eacute;tends de ce jour mieux employer le reste,<br/>
+Et dire un changement, non de corps, mais de coeur.<br/>
+Le miracle en est grand ; Amour en fut l'auteur :<br/>
+Il en fait tous les jours de diverse mani&egrave;re ;<br/>
+Je changerai de style en changeant de mati&egrave;re.<br/>
+Zoon plaisait aux yeux ; mais ce n'est pas assez :<br/>
+Son peu d'esprit, son humeur sombre,<br/>
+Rendaient ces talents mal plac&eacute;s.<br/>
+Il fuyait les cit&eacute;s, il ne cherchait que l'ombre,<br/>
+Vivait parmi les bois, concitoyen des ours.<br/>
+Et passait sans aimer les plus beaux de ses jours.<br/>
+Nous avons condamn&eacute; l'amour, m'allez-vous dire :<br/>
+J'en bl&acirc;me en nous l'exc&egrave;s ; mais je n'approuve pas<br/>
+Qu'insensible aux plus doux appas<br/>
+Jamais un homme ne soupire.<br/>
+H&eacute; quoi ! ce long repos est-il d'un si grand prix ?<br/>
+Les morts sont donc heureux ? Ce n'est pas mon avis :<br/>
+Je veux des passions ; et si l'&eacute;tat le pire<br/>
+Est le n&eacute;ant, je ne sais point<br/>
+De n&eacute;ant plus complet qu'un coeur froid &agrave; ce point.<br/>
+Zoon n'aimant donc rien, ne s'aimant pas lui-m&ecirc;me,<br/>
+Vit Iole endormie, et le voil&agrave; frapp&eacute; :<br/>
+Voil&agrave; son coeur d&eacute;velopp&eacute;.<br/>
+Amour, par son savoir supr&ecirc;me,<br/>
+Ne l'eut pas fait amant, qu'il en fit un h&eacute;ros.<br/>
+Zoon rend gr&acirc;ce au Dieu qui troublait son repos :<br/>
+Il regarde en tremblant cette jeune merveille.<br/>
+A la fin Iole s'&eacute;veille ;<br/>
+Surprise et dans l'&eacute;tonnement,<br/>
+Elle veut fuir, mais son Amant<br/>
+L'arr&ecirc;te, et lui tient ce langage :<br/>
+Rare et charmant objet, pourquoi me fuyez-vous ?<br/>
+Je ne suis plus celui qu'on trouvait si sauvage :<br/>
+C'est l'effet de vos traits, aussi puissants que doux ;<br/>
+Ils m'ont l'&acirc;me et l'esprit et la raison donn&eacute;e.<br/>
+Souffrez que, vivant sous vos lois,<br/>
+J'emploie &agrave; vous servir des biens que je vous dois.<br/>
+Iole, &agrave; ce discours encor plus &eacute;tonn&eacute;e,<br/>
+Rougit, et sans r&eacute;pondre elle court au hameau,<br/>
+Et raconte &agrave; chacun ce miracle nouveau.<br/>
+Ses compagnes d'abord s'assemblent autour d'elle :<br/>
+Zoon suit en triomphe, et chacun applaudit.<br/>
+Je ne vous dirai point, mes soeurs, tout ce qu'il fit,<br/>
+Ni ses soins pour plaire &agrave; la belle :<br/>
+Leur hymen se conclut. Un Satrape voisin,<br/>
+Le propre jour de cette f&ecirc;te,<br/>
+Enl&egrave;ve &agrave; Zoon sa conqu&ecirc;te :<br/>
+On ne soup&ccedil;onnait point qu'il eût un tel dessein.<br/>
+Zoon accourt au bruit, recouvre ce cher gage,<br/>
+Poursuit le ravisseur, et le joint et l'engage<br/>
+En un combat de main &agrave; main.<br/>
+Iole en est le prix aussi bien que le juge.<br/>
+Le Satrape, vaincu, trouve encor du refuge<br/>
+En la bont&eacute; de son rival.<br/>
+H&eacute;las ! cette bont&eacute; lui devint inutile ;<br/>
+Il mourut du regret de cet hymen fatal :<br/>
+Aux plus infortun&eacute;s la tombe sert d'asile.<br/>
+Il prit pour h&eacute;riti&egrave;re, en finissant ses jours,<br/>
+Iole, qui mouilla de pleurs son mausol&eacute;e.<br/>
+Que sert-il d'&ecirc;tre plaint quand l'&acirc;me est envol&eacute;e ?<br/>
+Ce satrape eût mieux fait d'oublier ses amours.<br/>
+La jeune Iris &agrave; peine achevait cette histoire ;<br/>
+Et ses soeurs avouaient qu'un chemin &agrave; la gloire,<br/>
+C'est l'amour : on fait tout pour se voir estim&eacute; ;<br/>
+Est-il quelque chemin plus court pour &ecirc;tre aim&eacute; ?<br/>
+Quel charme de s'ou&iuml;r louer par une bouche<br/>
+Qui m&ecirc;me sans s'ouvrir nous enchante et nous touche<br/>
+Ainsi disaient ces soeurs. Un orage soudain<br/>
+Jette un secret remords dans leur profane sein.<br/>
+Bacchus entre, et sa cour, confus et long cort&egrave;ge :<br/>
+O&ugrave; sont, dit-il, ces soeurs &agrave; la main sacril&egrave;ge ?<br/>
+Que Pallas les d&eacute;fende, et vienne en leur faveur<br/>
+Opposer son AEgide &agrave; ma juste fureur :<br/>
+Rien ne m'emp&ecirc;chera de punir leur offense.<br/>
+Voyez : et qu'on se rie apr&egrave;s de ma puissance !<br/>
+Il n'eut pas dit, qu'on vit trois monstres au plancher,<br/>
+Ail&eacute;s, noirs et velus, en un coin s'attacher.<br/>
+On cherche les trois Soeurs ; on n'en voit nulle trace :<br/>
+Leurs m&eacute;tiers sont bris&eacute;s ; on &eacute;l&egrave;ve en leur place<br/>
+Une Chapelle au Dieu, p&egrave;re du vrai Nectar.<br/>
+Pallas a beau se plaindre, elle a beau prendre part<br/>
+Au destin de ces Soeurs par elle prot&eacute;g&eacute;es ;<br/>
+Quand quelque dieu, voyant ses bont&eacute;s n&eacute;glig&eacute;es,<br/>
+Nous fait sentir son ire, un autre n'y peut rien :<br/>
+L'Olympe s'entretient en paix par ce moyen.<br/>
+Profitons, s'il se peut, d'un si fameux exemple :<br/>
+Chommons : c'est faire assez qu'aller de Temple en Temple<br/>
+Rendre &agrave; chaque immortel les voeux qui lui sont dus :<br/>
+Les jours donn&eacute;s aux Dieux ne sont jamais perdus.<br/>
+
+		</p>
+		<p>Extrait du Livre XII de <em>Jean de La Fontaine</em> | 561 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="27-belphegor.html" title="fable précédente dans ce livre">Belph&eacute;gor </a>&nbsp;
+				<a class="suiv" href="29-le-juge-arbitre--l-hospitalier--et-le-solitaire.html" title="fable suivante dans ce livre">Le Juge arbitre, ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-11/03-le-fermier--le-chien--et-le-renard.html" title="fable précédente dans l'ordre alphabétique">Le Fermier, le Chien, et ...</a>
+&nbsp;
+				<a class="suiv" href="16-la-foret-et-le-bucheron.html" title="fable suivante dans l'ordre alphabétique">La For&ecirc;t et le ...</a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre XII</h2><ul>
+<li><a href="01-les-compagnons-d-ulysse.html" title="La Fontaine, fable : Les Compagnons d'Ulysse ">Les Compagnons d'Ulysse </a></li><li><a href="02-le-chat-et-les-deux-moineaux.html" title="La Fontaine, fable : Le Chat et les deux Moineaux ">Le Chat et les deux Moineaux </a></li><li><a href="03-du-thesauriseur-et-du-singe.html" title="La Fontaine, fable : Du Th&eacute;sauriseur et du Singe ">Du Th&eacute;sauriseur et du Singe </a></li><li><a href="04-les-deux-chevres.html" title="La Fontaine, fable : Les Deux Ch&egrave;vres ">Les Deux Ch&egrave;vres </a></li><li><a href="05-le-vieux-chat-et-la-jeune-souris.html" title="La Fontaine, fable : Le vieux Chat et la jeune Souris ">Le vieux Chat et la jeune Souris </a></li><li><a href="06-le-cerf-malade.html" title="La Fontaine, fable : Le Cerf malade ">Le Cerf malade </a></li><li><a href="07-la-chauve-souris--le-buisson--et-le-canard.html" title="La Fontaine, fable : La Chauve-Souris, le Buisson, et le Canard ">La Chauve-Souris, le Buisson, et le Canard </a></li><li><a href="08-la-querelle-des-chiens-et-des-chats--et-celle-des-chats-et-des-souris.html" title="La Fontaine, fable : La Querelle des chiens et des chats, et celle des chats et des souris ">La Querelle des chiens et des chats, et celle des chats et des souris </a></li><li><a href="09-le-loup-et-le-renard.html" title="La Fontaine, fable : Le Loup et le Renard ">Le Loup et le Renard </a></li><li><a href="10-l-ecrevisse-et-sa-fille.html" title="La Fontaine, fable : L'Ecrevisse et sa Fille ">L'Ecrevisse et sa Fille </a></li><li><a href="11-l-aigle-et-la-pie.html" title="La Fontaine, fable : L'Aigle et la Pie ">L'Aigle et la Pie </a></li><li><a href="12-le-milan--le-roi--et-le-chasseur.html" title="La Fontaine, fable : Le Milan, le Roi, et le Chasseur ">Le Milan, le Roi, et le Chasseur </a></li><li><a href="13-le-renard--les-mouches--et-le-herisson.html" title="La Fontaine, fable : Le Renard, les Mouches, et le H&eacute;risson ">Le Renard, les Mouches, et le H&eacute;risson </a></li><li><a href="14-l-amour-et-la-folie.html" title="La Fontaine, fable : L'Amour et la Folie ">L'Amour et la Folie </a></li><li><a href="15-le-corbeau--la-gazelle--la-tortue--et-le-rat.html" title="La Fontaine, fable : Le Corbeau, la Gazelle, la Tortue, et le Rat ">Le Corbeau, la Gazelle, la Tortue, et le Rat </a></li><li><a href="16-la-foret-et-le-bucheron.html" title="La Fontaine, fable : La For&ecirc;t et le Bûcheron ">La For&ecirc;t et le Bûcheron </a></li><li><a href="17-le-renard--le-loup--et-le-cheval.html" title="La Fontaine, fable : Le Renard, le Loup, et le Cheval ">Le Renard, le Loup, et le Cheval </a></li><li><a href="18-le-renard-et-les-poulets-d-inde.html" title="La Fontaine, fable : Le Renard et les Poulets d'Inde ">Le Renard et les Poulets d'Inde </a></li><li><a href="19-le-singe.html" title="La Fontaine, fable : Le Singe ">Le Singe </a></li><li><a href="20-le-philosophe-scythe.html" title="La Fontaine, fable : Le Philosophe scythe ">Le Philosophe scythe </a></li><li><a href="21-l-elephant-et-le-singe-de-jupiter.html" title="La Fontaine, fable : L'El&eacute;phant et le Singe de Jupiter ">L'El&eacute;phant et le Singe de Jupiter </a></li><li><a href="22-un-fou-et-un-sage.html" title="La Fontaine, fable : Un Fou et un Sage ">Un Fou et un Sage </a></li><li><a href="23-le-renard-anglais.html" title="La Fontaine, fable : Le Renard anglais ">Le Renard anglais </a></li><li><a href="24-daphnis-et-alcimadure.html" title="La Fontaine, fable : Daphnis et Alcimadure ">Daphnis et Alcimadure </a></li><li><a href="25-philemon-et-baucis.html" title="La Fontaine, fable : Phil&eacute;mon et Baucis ">Phil&eacute;mon et Baucis </a></li><li><a href="26-la-matrone-d-ephese.html" title="La Fontaine, fable : La Matrone d'Eph&egrave;se ">La Matrone d'Eph&egrave;se </a></li><li><a href="27-belphegor.html" title="La Fontaine, fable : Belph&eacute;gor ">Belph&eacute;gor </a></li><li><a href="28-les-filles-de-minee.html" title="La Fontaine, fable : Les Filles de Min&eacute;e ">Les Filles de Min&eacute;e </a></li><li><a href="29-le-juge-arbitre--l-hospitalier--et-le-solitaire.html" title="La Fontaine, fable : Le Juge arbitre, l'Hospitalier, et le Solitaire ">Le Juge arbitre, l'Hospitalier, et le Solitaire </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Le Rat qui s'est retir&eacute; du monde  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Le Rat qui s'est retir&eacute; du monde , Levantins, certain, d'ici-bas, fromage, Hollande, solitude, profonde, partout, nouveau, subsistait "/>
+	<meta name="description" content="La fable Le Rat qui s'est retir&eacute; du monde , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Le Rat qui s\'est retir&eacute; du monde "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="03-le-rat-qui-s-est-retire-du-monde.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Le Rat qui s'est retir&eacute; du monde </h1>
+		<p class="fable">
+		Les Levantins en leur l&eacute;gende<br/>
+Disent qu'un certain Rat las des soins d'ici-bas,<br/>
+Dans un fromage de Hollande<br/>
+Se retira loin du tracas.<br/>
+La solitude &eacute;tait profonde,<br/>
+S'&eacute;tendant partout &agrave; la ronde.<br/>
+Notre ermite nouveau subsistait l&agrave;-dedans.<br/>
+Il fit tant de pieds et de dents<br/>
+Qu'en peu de jours il eut au fond de l'ermitage<br/>
+Le vivre et le couvert : que faut-il davantage ?<br/>
+Il devint gros et gras ; Dieu prodigue ses biens<br/>
+A ceux qui font voeu d'&ecirc;tre siens.<br/>
+Un jour, au d&eacute;vot personnage<br/>
+Des d&eacute;put&eacute;s du peuple Rat<br/>
+S'en vinrent demander quelque aum&ocirc;ne l&eacute;g&egrave;re :<br/>
+Ils allaient en terre &eacute;trang&egrave;re<br/>
+Chercher quelque secours contre le peuple chat ;<br/>
+Ratopolis &eacute;tait bloqu&eacute;e :<br/>
+On les avait contraints de partir sans argent,<br/>
+Attendu l'&eacute;tat indigent<br/>
+De la R&eacute;publique attaqu&eacute;e.<br/>
+Ils demandaient fort peu, certains que le secours<br/>
+Serait pr&ecirc;t dans quatre ou cinq jours.<br/>
+Mes amis, dit le Solitaire,<br/>
+Les choses d'ici-bas ne me regardent plus :<br/>
+En quoi peut un pauvre Reclus<br/>
+Vous assister ? que peut-il faire,<br/>
+Que de prier le Ciel qu'il vous aide en ceci ?<br/>
+J'esp&egrave;re qu'il aura de vous quelque souci.<br/>
+Ayant parl&eacute; de cette sorte.<br/>
+Le nouveau Saint ferma sa porte.<br/>
+Qui d&eacute;signai-je, &agrave; votre avis,<br/>
+Par ce Rat si peu secourable ?<br/>
+Un Moine ? Non, mais un Dervis :<br/>
+Je suppose qu'un Moine est toujours charitable.<br/>
+
+		</p>
+		<p>Extrait du Livre VII de <em>Jean de La Fontaine</em> | 35 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="02-le-mal-marie.html" title="fable précédente dans ce livre">Le Mal Mari&eacute; </a>&nbsp;
+				<a class="suiv" href="04-le-heron--la-fille.html" title="fable suivante dans ce livre">Le H&eacute;ron, la ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-8/09-le-rat-et-l-huitre.html" title="fable précédente dans l'ordre alphabétique">Le Rat et l'Hu&icirc;tre </a>
+&nbsp;
+				<a class="suiv" href="../livre-12/23-le-renard-anglais.html" title="fable suivante dans l'ordre alphabétique">Le Renard anglais </a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre VII</h2><ul>
+<li><a href="01-les-animaux-malades-de-la-peste.html" title="La Fontaine, fable : Les Animaux malades de la peste ">Les Animaux malades de la peste </a></li><li><a href="02-le-mal-marie.html" title="La Fontaine, fable : Le Mal Mari&eacute; ">Le Mal Mari&eacute; </a></li><li><a href="03-le-rat-qui-s-est-retire-du-monde.html" title="La Fontaine, fable : Le Rat qui s'est retir&eacute; du monde ">Le Rat qui s'est retir&eacute; du monde </a></li><li><a href="04-le-heron--la-fille.html" title="La Fontaine, fable : Le H&eacute;ron, la Fille ">Le H&eacute;ron, la Fille </a></li><li><a href="05-les-souhaits.html" title="La Fontaine, fable : Les Souhaits ">Les Souhaits </a></li><li><a href="06-la-cour-du-lion.html" title="La Fontaine, fable : La Cour du Lion ">La Cour du Lion </a></li><li><a href="07-les-vautours-et-les-pigeons.html" title="La Fontaine, fable : Les Vautours et les Pigeons ">Les Vautours et les Pigeons </a></li><li><a href="08-le-coche-et-la-mouche.html" title="La Fontaine, fable : Le Coche et la Mouche ">Le Coche et la Mouche </a></li><li><a href="09-la-laitiere-et-le-pot-au-lait.html" title="La Fontaine, fable : La Laiti&egrave;re et le Pot au lait ">La Laiti&egrave;re et le Pot au lait </a></li><li><a href="10-le-cure-et-le-mort.html" title="La Fontaine, fable : Le Cur&eacute; et le Mort ">Le Cur&eacute; et le Mort </a></li><li><a href="11-l-homme-qui-court-apres-la-fortune-et-l-homme-qui-l-attend-dans-son-lit.html" title="La Fontaine, fable : L'Homme qui court apr&egrave;s la Fortune et l'Homme qui l'attend dans son lit ">L'Homme qui court apr&egrave;s la Fortune et l'Homme qui l'attend dans son lit </a></li><li><a href="12-les-deux-coqs.html" title="La Fontaine, fable : Les deux Coqs ">Les deux Coqs </a></li><li><a href="13-l-ingratitude-et-l-injustice-des-hommes-envers-la-fortune.html" title="La Fontaine, fable : L'Ingratitude et l'Injustice des hommes envers la fortune ">L'Ingratitude et l'Injustice des hommes envers la fortune </a></li><li><a href="14-les-devineresses.html" title="La Fontaine, fable : Les Devineresses ">Les Devineresses </a></li><li><a href="15-le-chat--la-belette--et-le-petit-lapin.html" title="La Fontaine, fable : Le Chat, la Belette, et le petit Lapin ">Le Chat, la Belette, et le petit Lapin </a></li><li><a href="16-la-tete-et-la-queue-du-serpent.html" title="La Fontaine, fable : La T&ecirc;te et la Queue du serpent ">La T&ecirc;te et la Queue du serpent </a></li><li><a href="17-un-animal-dans-la-lune.html" title="La Fontaine, fable : Un Animal dans la lune ">Un Animal dans la lune </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

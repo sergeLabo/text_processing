@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>L'Homme et la Couleuvre  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="L'Homme et la Couleuvre , Couleuvre, l'univers, l'animal, pervers, l'homme, pourrait, tromper), serpent, laissant, attraper "/>
+	<meta name="description" content="La fable L'Homme et la Couleuvre , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, L\'Homme et la Couleuvre "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="01-l-homme-et-la-couleuvre.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>L'Homme et la Couleuvre </h1>
+		<p class="fable">
+		Un Homme vit une Couleuvre.<br/>
+Ah ! m&eacute;chante, dit-il, je m'en vais faire une oeuvre<br/>
+Agr&eacute;able &agrave; tout l'univers.<br/>
+A ces mots, l'animal pervers<br/>
+Et non l'homme : on pourrait ais&eacute;ment s'y tromper),<br/>
+A ces mots, le serpent, se laissant attraper,<br/>
+Est pris, mis en un sac ; et, ce qui fut le pire,<br/>
+On r&eacute;solut sa mort, fût-il coupable ou non.<br/>
+Afin de le payer toutefois de raison,<br/>
+L'autre lui fit cette harangue :<br/>
+Symbole des ingrats, &ecirc;tre bon aux m&eacute;chants,<br/>
+C'est &ecirc;tre sot, meurs donc : ta col&egrave;re et tes dents<br/>
+Ne me nuiront jamais. Le Serpent, en sa langue,<br/>
+Reprit du mieux qu'il put : S'il fallait condamner<br/>
+Tous les ingrats qui sont au monde,<br/>
+A qui pourrait-on pardonner ?<br/>
+Toi-m&ecirc;me tu te fais ton proc&egrave;s. Je me fonde<br/>
+Sur tes propres le&ccedil;ons ; jette les yeux sur toi.<br/>
+Mes jours sont en tes mains, tranche-les : ta justice,<br/>
+C'est ton utilit&eacute;, ton plaisir, ton caprice ;<br/>
+Selon ces lois, condamne-moi ;<br/>
+Mais trouve bon qu'avec franchise<br/>
+En mourant au moins je te dise<br/>
+Que le symbole des ingrats<br/>
+Ce n'est point le serpent, c'est l'homme. Ces paroles<br/>
+Firent arr&ecirc;ter l'autre ; il recula d'un pas.<br/>
+Enfin il repartit : Tes raisons sont frivoles :<br/>
+Je pourrais d&eacute;cider, car ce droit m'appartient ;<br/>
+Mais rapportons-nous-en. - Soit fait, dit le reptile.<br/>
+Une Vache &eacute;tait l&agrave;, l'on l'appelle, elle vient ;<br/>
+Le cas est propos&eacute; ; c'&eacute;tait chose facile :<br/>
+Fallait-il pour cela, dit-elle, m'appeler ?<br/>
+La Couleuvre a raison ; pourquoi dissimuler ?<br/>
+Je nourris celui-ci depuis longues ann&eacute;es ;<br/>
+Il n'a sans mes bienfaits pass&eacute; nulles journ&eacute;es ;<br/>
+Tout n'est que pour lui seul ; mon lait et mes enfants<br/>
+Le font &agrave; la maison revenir les mains pleines ;<br/>
+M&ecirc;me j'ai r&eacute;tabli sa sant&eacute;, que les ans<br/>
+Avaient alt&eacute;r&eacute;e, et mes peines<br/>
+Ont pour but son plaisir ainsi que son besoin.<br/>
+Enfin me voil&agrave; vieille ; il me laisse en un coin<br/>
+Sans herbe ; s'il voulait encor me laisser pa&icirc;tre !<br/>
+Mais je suis attach&eacute;e ; et si j'eusse eu pour ma&icirc;tre<br/>
+Un serpent, eût-il su jamais pousser si loin<br/>
+L'homme, tout &eacute;tonn&eacute; d'une telle sentence,<br/>
+Dit au Serpent : Faut-il croire ce qu'elle dit ?<br/>
+C'est une radoteuse ; elle a perdu l'esprit.<br/>
+Croyons ce Boeuf. - Croyons, dit la rampante b&ecirc;te.<br/>
+Ainsi dit, ainsi fait. Le Boeuf vient &agrave; pas lents.<br/>
+Quand il eut rumin&eacute; tout le cas en sa t&ecirc;te,<br/>
+Il dit que du labeur des ans<br/>
+Pour nous seuls il portait les soins les plus pesants,<br/>
+Parcourant sans cesser ce long cercle de peines<br/>
+Qui, revenant sur soi, ramenait dans nos plaines<br/>
+Ce que C&eacute;r&egrave;s nous donne, et vend aux animaux ;<br/>
+Que cette suite de travaux<br/>
+Pour r&eacute;compense avait, de tous tant que nous sommes,<br/>
+Force coups, peu de gr&eacute; ; puis, quand il &eacute;tait vieux,<br/>
+On croyait l'honorer chaque fois que les hommes<br/>
+Achetaient de son sang l'indulgence des Dieux.<br/>
+Ainsi parla le Boeuf. L'Homme dit : Faisons taire<br/>
+Cet ennuyeux d&eacute;clamateur ;<br/>
+Il cherche de grands mots, et vient ici se faire,<br/>
+Au lieu d'arbitre, accusateur.<br/>
+Je le r&eacute;cuse aussi. L'arbre &eacute;tant pris pour juge,<br/>
+Ce fut bien pis encore. Il servait de refuge<br/>
+Contre le chaud, la pluie, et la fureur des vents ;<br/>
+Pour nous seuls il ornait les jardins et les champs.<br/>
+L'ombrage n'&eacute;tait pas le seul bien qu'il sût faire ;<br/>
+Il courbait sous les fruits ; cependant pour salaire<br/>
+Un rustre l'abattait, c'&eacute;tait l&agrave; son loyer,<br/>
+Quoique pendant tout l'an lib&eacute;ral il nous donne<br/>
+Ou des fleurs au Printemps, ou du fruit en Automne ;<br/>
+L'ombre l'Et&eacute;, l'Hiver les plaisirs du foyer.<br/>
+Que ne l'&eacute;mondait-on, sans prendre la cogn&eacute;e ?<br/>
+De son temp&eacute;rament il eût encor v&eacute;cu.<br/>
+L'Homme trouvant mauvais que l'on l'eût convaincu,<br/>
+Voulut &agrave; toute force avoir cause gagn&eacute;e.<br/>
+Je suis bien bon, dit-il, d'&eacute;couter ces gens-l&agrave;.<br/>
+Du sac et du serpent aussit&ocirc;t il donna<br/>
+Contre les murs, tant qu'il tua la b&ecirc;te.<br/>
+On en use ainsi chez les grands.<br/>
+La raison les offense ; ils se mettent en t&ecirc;te<br/>
+Que tout est n&eacute; pour eux, quadrup&egrave;des, et gens,<br/>
+Et serpents.<br/>
+Si quelqu'un desserre les dents,<br/>
+C'est un sot. - J'en conviens. Mais que faut-il donc faire ?<br/>
+- Parler de loin, ou bien se taire.<br/>
+
+		</p>
+		<p>Extrait du Livre X de <em>Jean de La Fontaine</em> | 88 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="01-l-homme-et-la-couleuvre.html" title="fable précédente dans ce livre"></a>&nbsp;
+				<a class="suiv" href="02-la-tortue-et-les-deux-canards.html" title="fable suivante dans ce livre">La Tortue et les deux ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-1/17-l-homme-entre-deux-ages-et-ses-deux-maitresses.html" title="fable précédente dans l'ordre alphabétique">L'Homme entre deux ...</a>
+&nbsp;
+				<a class="suiv" href="../livre-8/05-l-homme-et-la-puce.html" title="fable suivante dans l'ordre alphabétique">L'Homme et la Puce </a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre X</h2><ul>
+<li><a href="01-l-homme-et-la-couleuvre.html" title="La Fontaine, fable : L'Homme et la Couleuvre ">L'Homme et la Couleuvre </a></li><li><a href="02-la-tortue-et-les-deux-canards.html" title="La Fontaine, fable : La Tortue et les deux Canards ">La Tortue et les deux Canards </a></li><li><a href="03-les-poissons-et-le-cormoran.html" title="La Fontaine, fable : Les Poissons et le Cormoran ">Les Poissons et le Cormoran </a></li><li><a href="04-l-enfouisseur-et-son-compere.html" title="La Fontaine, fable : L'Enfouisseur et son Comp&egrave;re ">L'Enfouisseur et son Comp&egrave;re </a></li><li><a href="05-le-loup-et-les-bergers.html" title="La Fontaine, fable : Le Loup et les Bergers ">Le Loup et les Bergers </a></li><li><a href="06-l-araignee-et-l-hirondelle.html" title="La Fontaine, fable : L'Araign&eacute;e et l'Hirondelle ">L'Araign&eacute;e et l'Hirondelle </a></li><li><a href="07-la-perdrix-et-les-coqs.html" title="La Fontaine, fable : La Perdrix et les Coqs ">La Perdrix et les Coqs </a></li><li><a href="08-le-chien-a-qui-on-a-coupe-les-oreilles.html" title="La Fontaine, fable : Le Chien &agrave; qui on a coup&eacute; les oreilles ">Le Chien &agrave; qui on a coup&eacute; les oreilles </a></li><li><a href="09-le-berger-et-le-roi.html" title="La Fontaine, fable : Le Berger et le Roi ">Le Berger et le Roi </a></li><li><a href="10-les-poissons-et-le-berger-qui-joue-de-la-flute.html" title="La Fontaine, fable : Les Poissons et le Berger qui joue de la flûte ">Les Poissons et le Berger qui joue de la flûte </a></li><li><a href="11-les-deux-perroquets--le-roi--et-son-fils.html" title="La Fontaine, fable : Les deux Perroquets, le Roi, et son fils ">Les deux Perroquets, le Roi, et son fils </a></li><li><a href="12-la-lionne-et-l-ourse.html" title="La Fontaine, fable : La Lionne et l'Ourse ">La Lionne et l'Ourse </a></li><li><a href="13-les-deux-aventuriers-et-le-talisman.html" title="La Fontaine, fable : Les deux Aventuriers et le Talisman ">Les deux Aventuriers et le Talisman </a></li><li><a href="14-discours-a-monsieur-le-duc-de-la-rochefoucault.html" title="La Fontaine, fable : Discours &agrave; Monsieur le Duc de La Rochefoucault ">Discours &agrave; Monsieur le Duc de La Rochefoucault </a></li><li><a href="15-le-marchand--le-gentilhomme--le-patre--et-le-fils-de-roi.html" title="La Fontaine, fable : Le Marchand, le Gentilhomme, le P&acirc;tre, et le Fils de roi ">Le Marchand, le Gentilhomme, le P&acirc;tre, et le Fils de roi </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

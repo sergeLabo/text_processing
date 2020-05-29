@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Belph&eacute;gor  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Belph&eacute;gor , Nouvelle, Machiavel, Monarque, Faisait, confondus, Princes, Jetaient, poussaient, demandait, passant "/>
+	<meta name="description" content="La fable Belph&eacute;gor , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Belph&eacute;gor "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="27-belphegor.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Belph&eacute;gor </h1>
+		<p class="fable">
+		Nouvelle tir&eacute;e de Machiavel<br/>
+Un jour Satan, Monarque des enfers,<br/>
+Faisait passer ses sujets en revue.<br/>
+L&agrave; confondus tous les &eacute;tats divers,<br/>
+Princes et Rois, et la tourbe menue,<br/>
+Jetaient maint pleur, poussaient maint et maint cri,<br/>
+Tant que Satan en &eacute;tait &eacute;tourdi.<br/>
+Il demandait en passant &agrave; chaque &acirc;me :<br/>
+Qui t'a jet&eacute;e en l'&eacute;ternelle flamme ?<br/>
+L'une disait : h&eacute;las c'est mon mari ;<br/>
+L'autre aussit&ocirc;t r&eacute;pondait : c'est ma femme.<br/>
+Tant et tant fut ce discours r&eacute;p&eacute;t&eacute;,<br/>
+Qu'enfin Satan dit en plein consistoire :<br/>
+Si ces gens-ci disent la v&eacute;rit&eacute;<br/>
+Il est ais&eacute; d'augmenter notre gloire.<br/>
+Nous n'avons donc qu'&agrave; le v&eacute;rifier.<br/>
+Pour cet effet, il nous faut envoyer<br/>
+Quelque d&eacute;mon plein d'art et de prudence ;<br/>
+Qui non content d'observer avec soin<br/>
+Tous les hymens dont il sera t&eacute;moin,<br/>
+Y joigne aussi sa propre exp&eacute;rience.<br/>
+Le Prince ayant propos&eacute; sa sentence,<br/>
+Le noir S&eacute;nat suivit tout d'une voix.<br/>
+De Belph&eacute;gor aussit&ocirc;t on fit choix.<br/>
+Ce diable &eacute;tait tout yeux et tout oreilles,<br/>
+Grand &eacute;plucheur, clairvoyant &agrave; merveilles,<br/>
+Capable enfin de p&eacute;n&eacute;trer dans tout,<br/>
+Et de pousser l'examen jusqu'au bout.<br/>
+Pour subvenir aux frais de l'entreprise,<br/>
+On lui donna mainte et mainte remise,<br/>
+Toutes &agrave; vue, et qu'en lieux diff&eacute;rents<br/>
+Il pût toucher par des correspondants.<br/>
+Quant au surplus, les fortunes humaines,<br/>
+Les biens, les maux, les plaisirs et les peines,<br/>
+Bref ce qui suit notre condition,<br/>
+Fut une annexe &agrave; sa l&eacute;gation.<br/>
+Il se pouvait tirer d'affliction,<br/>
+Par ses bons tours et par son industrie,<br/>
+Mais non mourir, ni revoir sa patrie,<br/>
+Qu'il n'eût ici consum&eacute; certain temps :<br/>
+Sa mission devait durer dix ans.<br/>
+Le voil&agrave; donc qui traverse et qui passe<br/>
+Ce que le Ciel voulut mettre d'espace<br/>
+Entre ce monde et l'&eacute;ternelle nuit ;<br/>
+Il n'en mit gu&egrave;re, un moment y conduit.<br/>
+Notre d&eacute;mon s'&eacute;tablit &agrave; Florence,<br/>
+Ville pour lors de luxe et de d&eacute;pense.<br/>
+M&ecirc;me il la crut propre pour le trafic.<br/>
+L&agrave; sous le nom du seigneur Roderic,<br/>
+Il se logea, meubla, comme un riche homme ;<br/>
+Grosse maison, grand train, nombre de gens ;<br/>
+Anticipant tous les jours sur la somme<br/>
+Qu'il ne devait consumer qu'en dix ans.<br/>
+On s'&eacute;tonnait d'une telle bombance.<br/>
+Il tenait table, avait de tous c&ocirc;t&eacute;s<br/>
+Gens &agrave; ses frais, soit pour ses volupt&eacute;s,<br/>
+Soit pour le faste et la magnificence.<br/>
+L'un des plaisirs o&ugrave; plus il d&eacute;pensa<br/>
+Fut la louange : Apollon l'encensa ;<br/>
+Car il est ma&icirc;tre en l'art de flatterie.<br/>
+Diable n'eut onc tant d'honneurs en sa vie.<br/>
+Son coeur devint le but de tous les traits<br/>
+Qu'amour lan&ccedil;ait : il n'&eacute;tait point de belle<br/>
+Qui n'employ&acirc;t ce qu'elle avait d'attraits<br/>
+Pour le gagner, tant sauvage fût-elle :<br/>
+Car de trouver une seule rebelle,<br/>
+Ce n'est la mode &agrave; gens de qui la main<br/>
+Par les pr&eacute;sents s'aplanit tout chemin.<br/>
+C'est un ressort en tous desseins utile.<br/>
+Je l'ai j&agrave; dit, et le redis encor ;<br/>
+Je ne connais d'autre premier mobile<br/>
+Dans l'Univers, que l'argent et que l'or.<br/>
+Notre envoy&eacute; cependant tenait compte<br/>
+De chaque hymen, en journaux diff&eacute;rents ;<br/>
+L'un, des &eacute;poux satisfaits et contents,<br/>
+Si peu rempli que le diable en eut honte.<br/>
+L'autre journal incontinent fut plein.<br/>
+A Belph&eacute;gor il ne restait enfin<br/>
+Que d'&eacute;prouver la chose par lui-m&ecirc;me.<br/>
+Certaine fille &agrave; Florence &eacute;tait lors ;<br/>
+Belle, et bien faite, et peu d'autres tr&eacute;sors ;<br/>
+Noble d'ailleurs, mais d'un orgueil extr&ecirc;me ;<br/>
+Et d'autant plus que de quelque vertu<br/>
+Un tel orgueil paraissait rev&ecirc;tu.<br/>
+Pour Roderic on en fit la demande.<br/>
+Le P&egrave;re dit que Madame Honnesta,<br/>
+C'&eacute;tait son nom, avait eu jusques l&agrave;<br/>
+Force partis ;<br/>
+Il pourrait bien Roderic pr&eacute;f&eacute;rer,<br/>
+Et demandait temps pour d&eacute;lib&eacute;rer.<br/>
+On en convient. Le poursuivant s'applique<br/>
+A gagner celle o&ugrave; ses voeux s'adressaient.<br/>
+F&ecirc;tes et bals, s&eacute;r&eacute;nades, musique,<br/>
+Cadeaux, festins, bien fort appetissaient,<br/>
+Alt&eacute;raient fort le fonds de l'ambassade.<br/>
+Il n'y plaint rien, en use en grand Seigneur,<br/>
+S'&eacute;puise en dons : l'autre se persuade<br/>
+Qu'elle lui fait encor beaucoup d'honneur.<br/>
+Conclusion, qu'apr&egrave;s force pri&egrave;res,<br/>
+Et des fa&ccedil;ons de toutes les mani&egrave;res,<br/>
+Il eut un oui de Madame Honnesta.<br/>
+Auparavant le Notaire y passa :<br/>
+Dont Belph&eacute;gor se moquant en son &acirc;me :<br/>
+H&eacute; quoi, dit-il, on acquiert une femme<br/>
+Comme un ch&acirc;teau ! Ces gens ont tout g&acirc;t&eacute;.<br/>
+Il eut raison : &ocirc;tez d'entre les hommes<br/>
+La simple foi, le meilleur est &ocirc;t&eacute;.<br/>
+Nous nous jetons, pauvres gens que nous sommes,<br/>
+Dans les proc&egrave;s en prenant le revers.<br/>
+Les si, les cas, les contrats sont la porte<br/>
+Par o&ugrave; la noise entra dans l'univers :<br/>
+N'esp&eacute;rons pas que jamais elle en sorte.<br/>
+Solennit&eacute;s et lois n'emp&ecirc;chent pas<br/>
+Qu'avec l'hymen amour n'ait des d&eacute;bats.<br/>
+C'est le coeur seul qui peut rendre tranquille.<br/>
+Le coeur fait tout, le reste est inutile.<br/>
+Qu'ainsi ne soit, voyons d'autres &eacute;tats.<br/>
+Chez les amis tout s'excuse, tout passe ;<br/>
+Chez les Amants tout pla&icirc;t, tout est parfait ;<br/>
+Chez les Epoux tout ennuie et tout lasse.<br/>
+Le devoir nuit : chacun est ainsi fait.<br/>
+Mais, dira-t-on, n'est-il en nulles guises<br/>
+D'heureux m&eacute;nage ? Apr&egrave;s mûr examen,<br/>
+J'appelle un bon, voire un parfait hymen,<br/>
+Quand les conjoints se souffrent leurs sottises.<br/>
+Sur ce point-l&agrave; c'est assez raisonn&eacute; :<br/>
+D&egrave;s que chez lui le Diable eut amen&eacute;<br/>
+Son &eacute;pous&eacute;e, il jugea par lui-m&ecirc;me<br/>
+Ce qu'est l'hymen avec un tel d&eacute;mon :<br/>
+Toujours d&eacute;bats, toujours quelque sermon<br/>
+Plein de sottise en un degr&eacute; supr&ecirc;me.<br/>
+Le bruit fut tel que Madame Honnesta<br/>
+Plus d'une fois les voisins &eacute;veilla :<br/>
+Plus d'une fois on courut &agrave; la noise :<br/>
+Il lui fallait quelque simple bourgeoise,<br/>
+Ce disait-elle : un petit trafiquant<br/>
+Traiter ainsi les filles de mon rang !<br/>
+M&eacute;ritait-il femme si vertueuse ?<br/>
+Sur mon devoir je suis trop scrupuleuse :<br/>
+J'en ai regret et si je faisais bien<br/>
+Il n'est pas sûr qu'Honnesta ne fit rien :<br/>
+Ces prudes-l&agrave; nous en font bien accroire.<br/>
+Nos deux Epoux, &agrave; ce que dit l'histoire,<br/>
+Sans disputer n'&eacute;taient pas un moment.<br/>
+Souvent leur guerre avait pour fondement<br/>
+Le jeu, la jupe ou quelque ameublement,<br/>
+D'&eacute;t&eacute;, d'hiver, d'entre-temps, bref un monde<br/>
+D'inventions propres &agrave; tout g&acirc;ter.<br/>
+Le pauvre diable eut lieu de regretter<br/>
+De l'autre enfer la demeure profonde.<br/>
+Pour comble enfin Roderic &eacute;pousa<br/>
+La parent&eacute; de Madame Honnesta,<br/>
+Ayant sans cesse et le p&egrave;re et la m&egrave;re,<br/>
+Et la grand'soeur avec le petit fr&egrave;re ;<br/>
+De ses deniers mariant la grand'soeur,<br/>
+Et du petit payant le pr&eacute;cepteur.<br/>
+Je n'ai pas dit la principale cause<br/>
+De sa ruine infaillible accident ;<br/>
+Et j'oubliais qu'il eut un intendant.<br/>
+Un intendant ? Qu'est-ce que cette chose ?<br/>
+Je d&eacute;finis cet &ecirc;tre un animal<br/>
+Qui comme on dit sait p&eacute;cher en eau trouble,<br/>
+Et plus le bien de son ma&icirc;tre va mal,<br/>
+Plus le sien cro&icirc;t, plus son profit redouble ?<br/>
+Tant qu'ais&eacute;ment lui-m&ecirc;me ach&egrave;terait<br/>
+Ce qui de net au Seigneur resterait :<br/>
+Dont par raison bien et dûment d&eacute;duite<br/>
+On pourrait voir chaque chose r&eacute;duite<br/>
+En son &eacute;tat, s'il arrivait qu'un jour<br/>
+L'autre dev&icirc;nt l'Intendant &agrave; son tour,<br/>
+Car regagnant ce qu'il eut &eacute;tant ma&icirc;tre,<br/>
+Ils reprendraient tous deux leur premier &ecirc;tre.<br/>
+Le seul recours du pauvre Roderic,<br/>
+Son seul espoir, &eacute;tait certain trafic<br/>
+Qu'il pr&eacute;tendait devoir remplir sa bourse,<br/>
+Espoir douteux, incertaine ressource.<br/>
+Il &eacute;tait dit que tout serait fatal<br/>
+A notre &eacute;poux, ainsi tout alla mal.<br/>
+Ses agents tels que la plupart des n&ocirc;tres,<br/>
+En abusaient : il perdit un vaisseau,<br/>
+Et vit aller le commerce &agrave; vau-l'eau,<br/>
+Tromp&eacute; des uns, mal servi par les autres.<br/>
+Il emprunta. Quand ce vint &agrave; payer,<br/>
+Et qu'&agrave; sa porte il vit le cr&eacute;ancier,<br/>
+Force lui fut d'esquiver par la fuite,<br/>
+Gagnant les champs, o&ugrave; de l'&acirc;pre poursuite<br/>
+Il se sauva chez un certain fermier,<br/>
+En certain coin rempar&eacute; de fumier.<br/>
+A Matheo, c'&eacute;tait le nom du Sire,<br/>
+Sans tant tourner il dit ce qu'il &eacute;tait ;<br/>
+Qu'un double mal chez lui le tourmentait,<br/>
+Ses cr&eacute;anciers et sa femme encor pire :<br/>
+Qu'il n'y savait rem&egrave;de que d'entrer<br/>
+Au corps des gens, et de s'y remparer,<br/>
+D'y tenir bon : irait-on l&agrave; le prendre ?<br/>
+Dame Honnesta viendrait-elle y pr&ocirc;ner<br/>
+Qu'elle a regret de se bien gouverner ?<br/>
+Chose ennuyeuse et qu'il est las d'entendre.<br/>
+Que de ces corps trois fois il sortirait<br/>
+Sit&ocirc;t que lui Matheo l'en prierait ;<br/>
+Trois fois sans plus et ce pour r&eacute;compense<br/>
+De l'avoir mis &agrave; couvert des Sergens.<br/>
+Tout aussit&ocirc;t l'Ambassadeur commence<br/>
+Avec grand bruit d'entrer au corps des gens.<br/>
+Ce que le sien, ouvrage fantastique,<br/>
+Devint alors, l'histoire n'en dit rien.<br/>
+Son coup d'essai fut une fille unique<br/>
+O&ugrave; le galant se trouvait assez bien ;<br/>
+Mais Matheo moyennant grosse somme<br/>
+L'en fit sortir au premier mot qu'il dit.<br/>
+C'&eacute;tait &agrave; Naples, il se transporte &agrave; Rome ;<br/>
+Saisit un corps : Matheo l'en bannit,<br/>
+Le chasse encore : autre somme nouvelle.<br/>
+Trois fois enfin, toujours d'un corps femelle,<br/>
+Remarquez bien, notre Diable sortit.<br/>
+Le Roi de Naples avait lors une fille,<br/>
+Honneur du sexe, espoir de sa famille ;<br/>
+Maint jeune prince &eacute;tait son poursuivant.<br/>
+L&agrave; d'Honnesta Belph&eacute;gor se sauvant,<br/>
+On ne le put tirer de cet asile.<br/>
+Il n'&eacute;tait bruit aux champs comme &agrave; la ville<br/>
+Que d'un manant qui chassait les esprits.<br/>
+Cent mille &eacute;cus d'abord lui sont promis.<br/>
+Bien afflig&eacute; de manquer cette somme<br/>
+Que Belph&eacute;gor se laiss&acirc;t conjurer)<br/>
+Il la refuse : il se dit un pauvre homme,<br/>
+Pauvre p&eacute;cheur, qui sans savoir comment,<br/>
+Sans dons du Ciel, par hasard seulement,<br/>
+De quelques corps a chass&eacute; quelque Diable,<br/>
+Apparemment ch&eacute;tif, et mis&eacute;rable,<br/>
+Et ne conna&icirc;t celui-ci nullement.<br/>
+Il a beau dire ; on le force, on l'am&egrave;ne,<br/>
+On le menace, on lui dit que sous peine<br/>
+D'&ecirc;tre pendu, d'&ecirc;tre mis haut et court<br/>
+En un gibet, il faut que sa puissance<br/>
+Se manifeste avant la fin du jour.<br/>
+D&egrave;s l'heure m&ecirc;me on vous met en pr&eacute;sence<br/>
+Notre D&eacute;mon et son Conjurateur.<br/>
+D'un tel combat le Prince est spectateur.<br/>
+Chacun y court : n'est fils de bonne m&egrave;re<br/>
+Qui pour le voir ne quitte toute affaire.<br/>
+D'un c&ocirc;t&eacute; sont le gibet et la hart,<br/>
+Cent mille &eacute;cus bien compt&eacute;s d'autre part.<br/>
+Matheo tremble, et lorgne la finance.<br/>
+L'esprit malin voyant sa contenance,<br/>
+Riait sous cape, all&eacute;guait les trois fois ;<br/>
+Dont Matheo suait en son harnois,<br/>
+Pressait, priait, conjurait avec larmes.<br/>
+Le tout en vain : plus il est en alarmes,<br/>
+Plus l'autre rit. Enfin le manant dit<br/>
+Que sur ce Diable il n'avait nul cr&eacute;dit.<br/>
+On vous le happe et m&egrave;ne &agrave; la potence.<br/>
+Comme il allait haranguer l'assistance,<br/>
+N&eacute;cessit&eacute; lui sugg&eacute;ra ce tour :<br/>
+Il dit tout bas qu'on batt&icirc;t le tambour,<br/>
+Ce qui fut fait ; de quoi l'esprit immonde<br/>
+Un peu surpris au manant demanda :<br/>
+Pourquoi ce bruit ? coquin, qu'entends-je l&agrave; ?<br/>
+L'autre r&eacute;pond : C'est Madame Honnesta<br/>
+Qui vous r&eacute;clame, et va pour tout le monde<br/>
+Cherchant l'&eacute;poux que le Ciel lui donna.<br/>
+Incontinent le Diable d&eacute;campa,<br/>
+S'enfuit au fond des enfers et conta<br/>
+Tout le succ&egrave;s qu'avait eu son voyage :<br/>
+Sire, dit-il, le noeud du mariage<br/>
+Damne aussi dru qu'aucuns autres &eacute;tats.<br/>
+Votre grandeur voit tomber ici-bas,<br/>
+Non par flocons, mais menu comme pluie,<br/>
+Ceux que l'hymen fait de sa confr&eacute;rie,<br/>
+J'ai par moi-m&ecirc;me examin&eacute; le cas.<br/>
+Non que de soi la chose ne soit bonne :<br/>
+Elle eut jadis un plus heureux destin ;<br/>
+Mais comment tout se corrompt &agrave; la fin,<br/>
+Plus beau fleuron n'est en votre couronne.<br/>
+Satan le crut : il fut r&eacute;compens&eacute; ;<br/>
+Encore qu'il eût son retour avanc&eacute; ;<br/>
+Car qu'eût-il fait ? Ce n'&eacute;tait pas merveilles<br/>
+Qu'ayant sans cesse un Diable &agrave; ses oreilles,<br/>
+Toujours le m&ecirc;me et toujours sur un ton,<br/>
+Il fût contraint d'enfiler la venelle ;<br/>
+Dans les enfers encore en change-t-on ;<br/>
+L'autre peine est &agrave; mon sens plus cruelle.<br/>
+Je voudrais voir quelque Saint y durer.<br/>
+Elle eût &agrave; Job fait tourner la cervelle.<br/>
+De tout ceci que pr&eacute;tends-je inf&eacute;rer ?<br/>
+Premi&egrave;rement je ne sais pire chose<br/>
+Que de changer son logis en prison ;<br/>
+En second lieu si par quelque raison<br/>
+Votre ascendant &agrave; l'hymen vous expose,<br/>
+N'&eacute;pousez point d'Honnesta s'il se peut ;<br/>
+N'a pas pourtant une Honnesta qui veut.<br/>
+
+		</p>
+		<p>Extrait du Livre XII de <em>Jean de La Fontaine</em> | 291 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="26-la-matrone-d-ephese.html" title="fable précédente dans ce livre">La Matrone ...</a>&nbsp;
+				<a class="suiv" href="28-les-filles-de-minee.html" title="fable suivante dans ce livre">Les Filles de ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-3/17-la-belette-entree-dans-un-grenier.html" title="fable précédente dans l'ordre alphabétique">La Belette entr&eacute;e ...</a>
+&nbsp;
+				<a class="suiv" href="../livre-4/02-le-berger-et-la-mer.html" title="fable suivante dans l'ordre alphabétique">Le Berger et la Mer </a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre XII</h2><ul>
+<li><a href="01-les-compagnons-d-ulysse.html" title="La Fontaine, fable : Les Compagnons d'Ulysse ">Les Compagnons d'Ulysse </a></li><li><a href="02-le-chat-et-les-deux-moineaux.html" title="La Fontaine, fable : Le Chat et les deux Moineaux ">Le Chat et les deux Moineaux </a></li><li><a href="03-du-thesauriseur-et-du-singe.html" title="La Fontaine, fable : Du Th&eacute;sauriseur et du Singe ">Du Th&eacute;sauriseur et du Singe </a></li><li><a href="04-les-deux-chevres.html" title="La Fontaine, fable : Les Deux Ch&egrave;vres ">Les Deux Ch&egrave;vres </a></li><li><a href="05-le-vieux-chat-et-la-jeune-souris.html" title="La Fontaine, fable : Le vieux Chat et la jeune Souris ">Le vieux Chat et la jeune Souris </a></li><li><a href="06-le-cerf-malade.html" title="La Fontaine, fable : Le Cerf malade ">Le Cerf malade </a></li><li><a href="07-la-chauve-souris--le-buisson--et-le-canard.html" title="La Fontaine, fable : La Chauve-Souris, le Buisson, et le Canard ">La Chauve-Souris, le Buisson, et le Canard </a></li><li><a href="08-la-querelle-des-chiens-et-des-chats--et-celle-des-chats-et-des-souris.html" title="La Fontaine, fable : La Querelle des chiens et des chats, et celle des chats et des souris ">La Querelle des chiens et des chats, et celle des chats et des souris </a></li><li><a href="09-le-loup-et-le-renard.html" title="La Fontaine, fable : Le Loup et le Renard ">Le Loup et le Renard </a></li><li><a href="10-l-ecrevisse-et-sa-fille.html" title="La Fontaine, fable : L'Ecrevisse et sa Fille ">L'Ecrevisse et sa Fille </a></li><li><a href="11-l-aigle-et-la-pie.html" title="La Fontaine, fable : L'Aigle et la Pie ">L'Aigle et la Pie </a></li><li><a href="12-le-milan--le-roi--et-le-chasseur.html" title="La Fontaine, fable : Le Milan, le Roi, et le Chasseur ">Le Milan, le Roi, et le Chasseur </a></li><li><a href="13-le-renard--les-mouches--et-le-herisson.html" title="La Fontaine, fable : Le Renard, les Mouches, et le H&eacute;risson ">Le Renard, les Mouches, et le H&eacute;risson </a></li><li><a href="14-l-amour-et-la-folie.html" title="La Fontaine, fable : L'Amour et la Folie ">L'Amour et la Folie </a></li><li><a href="15-le-corbeau--la-gazelle--la-tortue--et-le-rat.html" title="La Fontaine, fable : Le Corbeau, la Gazelle, la Tortue, et le Rat ">Le Corbeau, la Gazelle, la Tortue, et le Rat </a></li><li><a href="16-la-foret-et-le-bucheron.html" title="La Fontaine, fable : La For&ecirc;t et le Bûcheron ">La For&ecirc;t et le Bûcheron </a></li><li><a href="17-le-renard--le-loup--et-le-cheval.html" title="La Fontaine, fable : Le Renard, le Loup, et le Cheval ">Le Renard, le Loup, et le Cheval </a></li><li><a href="18-le-renard-et-les-poulets-d-inde.html" title="La Fontaine, fable : Le Renard et les Poulets d'Inde ">Le Renard et les Poulets d'Inde </a></li><li><a href="19-le-singe.html" title="La Fontaine, fable : Le Singe ">Le Singe </a></li><li><a href="20-le-philosophe-scythe.html" title="La Fontaine, fable : Le Philosophe scythe ">Le Philosophe scythe </a></li><li><a href="21-l-elephant-et-le-singe-de-jupiter.html" title="La Fontaine, fable : L'El&eacute;phant et le Singe de Jupiter ">L'El&eacute;phant et le Singe de Jupiter </a></li><li><a href="22-un-fou-et-un-sage.html" title="La Fontaine, fable : Un Fou et un Sage ">Un Fou et un Sage </a></li><li><a href="23-le-renard-anglais.html" title="La Fontaine, fable : Le Renard anglais ">Le Renard anglais </a></li><li><a href="24-daphnis-et-alcimadure.html" title="La Fontaine, fable : Daphnis et Alcimadure ">Daphnis et Alcimadure </a></li><li><a href="25-philemon-et-baucis.html" title="La Fontaine, fable : Phil&eacute;mon et Baucis ">Phil&eacute;mon et Baucis </a></li><li><a href="26-la-matrone-d-ephese.html" title="La Fontaine, fable : La Matrone d'Eph&egrave;se ">La Matrone d'Eph&egrave;se </a></li><li><a href="27-belphegor.html" title="La Fontaine, fable : Belph&eacute;gor ">Belph&eacute;gor </a></li><li><a href="28-les-filles-de-minee.html" title="La Fontaine, fable : Les Filles de Min&eacute;e ">Les Filles de Min&eacute;e </a></li><li><a href="29-le-juge-arbitre--l-hospitalier--et-le-solitaire.html" title="La Fontaine, fable : Le Juge arbitre, l'Hospitalier, et le Solitaire ">Le Juge arbitre, l'Hospitalier, et le Solitaire </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

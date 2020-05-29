@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Les deux Pigeons  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Les deux Pigeons , Pigeons, s'aimaient, d'amour, s'ennuyant, entreprendre, lointain, L'autre, Qu'allez-vous, Voulez-vous, quitter "/>
+	<meta name="description" content="La fable Les deux Pigeons , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Les deux Pigeons "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="02-les-deux-pigeons.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Les deux Pigeons </h1>
+		<p class="fable">
+		Deux Pigeons s'aimaient d'amour tendre.<br/>
+L'un d'eux s'ennuyant au logis<br/>
+Fut assez fou pour entreprendre<br/>
+Un voyage en lointain pays.<br/>
+L'autre lui dit : Qu'allez-vous faire ?<br/>
+Voulez-vous quitter votre fr&egrave;re ?<br/>
+L'absence est le plus grand des maux :<br/>
+Non pas pour vous, cruel. Au moins, que les travaux,<br/>
+Les dangers, les soins du voyage,<br/>
+Changent un peu votre courage.<br/>
+Encor si la saison s'avan&ccedil;ait davantage !<br/>
+Attendez les z&eacute;phyrs. Qui vous presse ? Un corbeau<br/>
+Tout &agrave; l'heure annon&ccedil;ait malheur &agrave; quelque oiseau.<br/>
+Je ne songerai plus que rencontre funeste,<br/>
+Que Faucons, que r&eacute;seaux. H&eacute;las, dirai-je, il pleut :<br/>
+Mon fr&egrave;re a-t-il tout ce qu'il veut,<br/>
+Bon soup&eacute;, bon g&icirc;te, et le reste ?<br/>
+Ce discours &eacute;branla le coeur<br/>
+De notre imprudent voyageur ;<br/>
+Mais le d&eacute;sir de voir et l'humeur inqui&egrave;te<br/>
+L'emport&egrave;rent enfin. Il dit : Ne pleurez point :<br/>
+Trois jours au plus rendront mon &acirc;me satisfaite ;<br/>
+Je reviendrai dans peu conter de point en point<br/>
+Mes aventures &agrave; mon fr&egrave;re.<br/>
+Je le d&eacute;sennuierai : quiconque ne voit gu&egrave;re<br/>
+N'a gu&egrave;re &agrave; dire aussi. Mon voyage d&eacute;peint<br/>
+Vous sera d'un plaisir extr&ecirc;me.<br/>
+Je dirai : J'&eacute;tais l&agrave; ; telle chose m'avint ;<br/>
+Vous y croirez &ecirc;tre vous-m&ecirc;me.<br/>
+A ces mots en pleurant ils se dirent adieu.<br/>
+Le voyageur s'&eacute;loigne ; et voil&agrave; qu'un nuage<br/>
+L'oblige de chercher retraite en quelque lieu.<br/>
+Un seul arbre s'offrit, tel encor que l'orage<br/>
+Maltraita le Pigeon en d&eacute;pit du feuillage.<br/>
+L'air devenu serein, il part tout morfondu,<br/>
+S&egrave;che du mieux qu'il peut son corps charg&eacute; de pluie,<br/>
+Dans un champ &agrave; l'&eacute;cart voit du bl&eacute; r&eacute;pandu,<br/>
+Voit un pigeon aupr&egrave;s ; cela lui donne envie :<br/>
+Il y vole, il est pris : ce bl&eacute; couvrait d'un las,<br/>
+Les menteurs et tra&icirc;tres appas.<br/>
+Le las &eacute;tait us&eacute; ! si bien que de son aile,<br/>
+De ses pieds, de son bec, l'oiseau le rompt enfin.<br/>
+Quelque plume y p&eacute;rit ; et le pis du destin<br/>
+Fut qu'un certain Vautour &agrave; la serre cruelle<br/>
+Vit notre malheureux, qui, tra&icirc;nant la ficelle<br/>
+Et les morceaux du las qui l'avait attrap&eacute;,<br/>
+Semblait un for&ccedil;at &eacute;chapp&eacute;.<br/>
+Le vautour s'en allait le lier, quand des nues<br/>
+Fond &agrave; son tour un Aigle aux ailes &eacute;tendues.<br/>
+Le Pigeon profita du conflit des voleurs,<br/>
+S'envola, s'abattit aupr&egrave;s d'une masure,<br/>
+Crut, pour ce coup, que ses malheurs<br/>
+Finiraient par cette aventure ;<br/>
+Mais un fripon d'enfant, cet &acirc;ge est sans piti&eacute;,<br/>
+Prit sa fronde et, du coup, tua plus d'&agrave; moiti&eacute;<br/>
+La volatile malheureuse,<br/>
+Qui, maudissant sa curiosit&eacute;,<br/>
+Tra&icirc;nant l'aile et tirant le pi&eacute;,<br/>
+Demi-morte et demi-boiteuse,<br/>
+Droit au logis s'en retourna.<br/>
+Que bien, que mal, elle arriva<br/>
+Sans autre aventure f&acirc;cheuse.<br/>
+Voil&agrave; nos gens rejoints ; et je laisse &agrave; juger<br/>
+De combien de plaisirs ils pay&egrave;rent leurs peines.<br/>
+Amants, heureux amants, voulez-vous voyager ?<br/>
+Que ce soit aux rives prochaines ;<br/>
+Soyez-vous l'un &agrave; l'autre un monde toujours beau,<br/>
+Toujours divers, toujours nouveau ;<br/>
+Tenez-vous lieu de tout, comptez pour rien le reste ;<br/>
+J'ai quelquefois aim&eacute; ! je n'aurais pas alors<br/>
+Contre le Louvre et ses tr&eacute;sors,<br/>
+Contre le firmament et sa voûte c&eacute;leste,<br/>
+Chang&eacute; les bois, chang&eacute; les lieux<br/>
+Honor&eacute;s par les pas, &eacute;clair&eacute;s par les yeux<br/>
+De l'aimable et jeune Berg&egrave;re<br/>
+Pour qui, sous le fils de Cyth&egrave;re,<br/>
+Je servis, engag&eacute; par mes premiers serments.<br/>
+H&eacute;las ! quand reviendront de semblables moments ?<br/>
+Faut-il que tant d'objets si doux et si charmants<br/>
+Me laissent vivre au gr&eacute; de mon &acirc;me inqui&egrave;te ?<br/>
+Ah ! si mon coeur osait encor se renflammer !<br/>
+Ne sentirai-je plus de charme qui m'arr&ecirc;te ?<br/>
+Ai-je pass&eacute; le temps d'aimer ?<br/>
+
+		</p>
+		<p>Extrait du Livre IX de <em>Jean de La Fontaine</em> | 83 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="01-le-depositaire-infidele.html" title="fable précédente dans ce livre">Le D&eacute;positaire ...</a>&nbsp;
+				<a class="suiv" href="03-le-singe-et-le-leopard.html" title="fable suivante dans ce livre">Le Singe et le ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-10/11-les-deux-perroquets--le-roi--et-son-fils.html" title="fable précédente dans l'ordre alphabétique">Les deux Perroquets, le ...</a>
+&nbsp;
+				<a class="suiv" href="21-les-deux-rats--le-renard--et-l-oeuf.html" title="fable suivante dans l'ordre alphabétique">Les deux Rats, le ...</a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre IX</h2><ul>
+<li><a href="01-le-depositaire-infidele.html" title="La Fontaine, fable : Le D&eacute;positaire infid&egrave;le ">Le D&eacute;positaire infid&egrave;le </a></li><li><a href="02-les-deux-pigeons.html" title="La Fontaine, fable : Les deux Pigeons ">Les deux Pigeons </a></li><li><a href="03-le-singe-et-le-leopard.html" title="La Fontaine, fable : Le Singe et le L&eacute;opard ">Le Singe et le L&eacute;opard </a></li><li><a href="04-le-gland-et-la-citrouille.html" title="La Fontaine, fable : Le Gland et la Citrouille ">Le Gland et la Citrouille </a></li><li><a href="05-l-ecolier--le-pedant--et-le-maitre-d-un-jardin.html" title="La Fontaine, fable : L'Ecolier, le P&eacute;dant, et le Ma&icirc;tre d'un jardin ">L'Ecolier, le P&eacute;dant, et le Ma&icirc;tre d'un jardin </a></li><li><a href="06-le-statuaire-et-la-statue-de-jupiter.html" title="La Fontaine, fable : Le Statuaire et la Statue de Jupiter ">Le Statuaire et la Statue de Jupiter </a></li><li><a href="07-la-souris-metamorphosee-en-fille.html" title="La Fontaine, fable : La Souris m&eacute;tamorphos&eacute;e en fille ">La Souris m&eacute;tamorphos&eacute;e en fille </a></li><li><a href="08-le-fou-qui-vend-la-sagesse.html" title="La Fontaine, fable : Le Fou qui vend la sagesse ">Le Fou qui vend la sagesse </a></li><li><a href="09-l-huitre-et-les-plaideurs.html" title="La Fontaine, fable : L'Hu&icirc;tre et les Plaideurs ">L'Hu&icirc;tre et les Plaideurs </a></li><li><a href="10-le-loup-et-le-chien-maigre.html" title="La Fontaine, fable : Le Loup et le Chien maigre ">Le Loup et le Chien maigre </a></li><li><a href="11-rien-de-trop.html" title="La Fontaine, fable : Rien de trop ">Rien de trop </a></li><li><a href="12-le-cierge.html" title="La Fontaine, fable : Le Cierge ">Le Cierge </a></li><li><a href="13-jupiter-et-le-passager.html" title="La Fontaine, fable : Jupiter et le Passager ">Jupiter et le Passager </a></li><li><a href="14-le-chat-et-le-renard.html" title="La Fontaine, fable : Le Chat et le Renard ">Le Chat et le Renard </a></li><li><a href="15-le-mari--la-femme--et-le-voleur.html" title="La Fontaine, fable : Le Mari, la Femme, et le Voleur ">Le Mari, la Femme, et le Voleur </a></li><li><a href="16-le-tresor-et-les-deux-hommes.html" title="La Fontaine, fable : Le Tr&eacute;sor et les deux Hommes ">Le Tr&eacute;sor et les deux Hommes </a></li><li><a href="17-le-singe-et-le-chat.html" title="La Fontaine, fable : Le Singe et le Chat ">Le Singe et le Chat </a></li><li><a href="18-le-milan-et-le-rossignol.html" title="La Fontaine, fable : Le Milan et le Rossignol ">Le Milan et le Rossignol </a></li><li><a href="19-le-berger-et-son-troupeau.html" title="La Fontaine, fable : Le Berger et son troupeau ">Le Berger et son troupeau </a></li><li><a href="20-discours-a-madame-de-la-sabliere.html" title="La Fontaine, fable : Discours &agrave; Madame de la Sabli&egrave;re ">Discours &agrave; Madame de la Sabli&egrave;re </a></li><li><a href="21-les-deux-rats--le-renard--et-l-oeuf.html" title="La Fontaine, fable : Les deux Rats, le Renard, et l'Oeuf ">Les deux Rats, le Renard, et l'Oeuf </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

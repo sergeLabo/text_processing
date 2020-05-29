@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Le Songe d'un habitant du Mogol  - La Fontaine</title>
+	<meta name="author" content="">
+	<meta name="robots" content="index,follow,all" />
+	<meta name="keywords" content="Le Songe d'un habitant du Mogol , certain, Elysiens, possesseur, plaisir, qu'infini, songeur, touchait, malheureux, l'ordinaire, semblait "/>
+	<meta name="description" content="La fable Le Songe d'un habitant du Mogol , Fable de Jean de La Fontaine"/>
+	<meta name="Classification" content="fable, poesie, jean de la fontaine, Le Songe d\'un habitant du Mogol "/> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+	<script type='text/javascript' src="js/prototype.js"></script>
+	<script type='text/javascript' src="js/scriptaculous.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20054855-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#4b81e8",
+      "border": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.",
+    "dismiss": "Ok",
+    "link": "En savoir plus"
+  }
+})});
+</script>
+</head>
+<script type="text/javascript">
+	function onOff(texte) 
+	{
+		var test = document.getElementById(texte).style.display;
+		if (test == "block") 
+		{
+			document.getElementById(texte).style.display = "none";
+		}
+		else 
+		{
+			document.getElementById(texte).style.display = "block";
+		}
+	}
+	function loadFb (d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}
+	function loader (){
+		loadFb (document, 'script', 'facebook-jssdk');
+			}
+</script>
+
+
+<body onload="loader();">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns" id="header">
+			<strong>Les fables de La Fontaine</strong>
+		</div>
+		<div class="sixteen columns" id="menu">
+		<div class="menuext" onclick='onOff("submenu");'>
+		</div>
+		<ul id="submenu">
+		<li><a href="../index.html" title="Accès aux fables de la Fontaine">Les fables</a></li> <li><a href="../jean.html" title="Quelques mots sur Jean de La Fontaine">La Fontaine</a></li> <li><a href="../alpha/fables-a-b.html" title="La Fontaine: fables par ordre alphabétique">ABC</a></li> <li><a href="../all.html" title="Voir toutes les fables de La Fontaine">Toutes ...</a></li> <li><a href="../perret.html" title="Bonus divers et variés">Bonus</a></li>
+		</ul>
+		<div id="search">	
+			<form action="04-le-songe-d-un-habitant-du-mogol.html" method="get">
+        		<input type="text" id="fable" name="fable" placeholder="Accès direct"/>
+    			<div id="fable_propositions" class="autocomplete"></div>
+		</form>
+		</div>
+<script type='text/javascript'>
+new Ajax.Autocompleter(
+    "fable", 
+    "fable_propositions",  
+    "/serveurFable.php",  
+    {
+        paramName: 'fable',  
+        minChars: 3,
+	afterUpdateElement : getSelectionId   
+    });
+    function getSelectionId (text, li){
+	window.location = "http://www.mesfables.com/"+li.id;
+    }
+</script>
+		</div>
+
+<div class="three columns" id="pub1">	
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- fable-mobile-v2-1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0341259555352355"
+     data-ad-slot="6747127054"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+</div>
+		
+	<div class="seven columns" id="lafable">	
+			<div class="seven columns" id="lafable">
+		<h1>Le Songe d'un habitant du Mogol </h1>
+		<p class="fable">
+		Jadis certain Mogol vit en songe un Vizir<br/>
+Aux champs Elysiens possesseur d'un plaisir<br/>
+Aussi pur qu'infini, tant en prix qu'en dur&eacute;e ;<br/>
+Le m&ecirc;me songeur vit en une autre contr&eacute;e<br/>
+Un Ermite entour&eacute; de feux,<br/>
+Qui touchait de piti&eacute; m&ecirc;me les malheureux.<br/>
+Le cas parut &eacute;trange, et contre l'ordinaire :<br/>
+Minos en ces deux morts semblait s'&ecirc;tre m&eacute;pris.<br/>
+Le dormeur s'&eacute;veilla, tant il en fut surpris.<br/>
+Dans ce songe pourtant soup&ccedil;onnant du myst&egrave;re,<br/>
+Il se fit expliquer l'affaire.<br/>
+L'interpr&egrave;te lui dit : Ne vous &eacute;tonnez point ;<br/>
+Votre songe a du sens ; et, si j'ai sur ce point<br/>
+Acquis tant soit peu d'habitude,<br/>
+C'est un avis des Dieux. Pendant l'humain s&eacute;jour,<br/>
+Ce Vizir quelquefois cherchait la solitude ;<br/>
+Cet Ermite aux Vizirs allait faire sa cour.<br/>
+Si j'osais ajouter au mot de l'interpr&egrave;te,<br/>
+J'inspirerais ici l'amour de la retraite :<br/>
+Elle offre &agrave; ses amants des biens sans embarras,<br/>
+Biens purs, pr&eacute;sents du Ciel, qui naissent sous les pas.<br/>
+Solitude o&ugrave; je trouve une douceur secr&egrave;te,<br/>
+Lieux que j'aimai toujours, ne pourrai-je jamais,<br/>
+Loin du monde et du bruit, goûter l'ombre et le frais ?<br/>
+Oh ! qui m'arr&ecirc;tera sous vos sombres asiles !<br/>
+Quand pourront les neuf Soeurs, loin des cours et des villes,<br/>
+M'occuper tout entier, et m'apprendre des Cieux<br/>
+Les divers mouvements inconnus &agrave; nos yeux,<br/>
+Les noms et les vertus de ces clart&eacute;s errantes<br/>
+Par qui sont nos destins et nos moeurs diff&eacute;rentes !<br/>
+Que si je ne suis n&eacute; pour de si grands projets,<br/>
+Du moins que les ruisseaux m'offrent de doux objets !<br/>
+Que je peigne en mes Vers quelque rive fleurie !<br/>
+La Parque &agrave; filets d'or n'ourdira point ma vie ;<br/>
+Je ne dormirai point sous de riches lambris ;<br/>
+Mais voit-on que le somme en perde de son prix ?<br/>
+En est-il moins profond, et moins plein de d&eacute;lices ?<br/>
+Je lui voue au d&eacute;sert de nouveaux sacrifices.<br/>
+Quand le moment viendra d'aller trouver les morts,<br/>
+J'aurai v&eacute;cu sans soins, et mourrai sans remords.<br/>
+
+		</p>
+		<p>Extrait du Livre XI de <em>Jean de La Fontaine</em> | 40 vers</p>
+		<div class="navother">
+			<h2>Dans le même livre :</h2>
+			<div class="entrylink">
+				<a class="prec" href="03-le-fermier--le-chien--et-le-renard.html" title="fable précédente dans ce livre">Le Fermier, le Chien, et ...</a>&nbsp;
+				<a class="suiv" href="05-le-lion--le-singe--et-les-deux-anes.html" title="fable suivante dans ce livre">Le Lion, le Singe, et ...</a>
+			</div>
+			<h2>Dans l'ensemble de l'oeuvre de La Fontaine :</h2>
+			<div class="entrylink">
+				<a class="prec" href="../livre-6/11-le-soleil-et-les-grenouilles.html" title="fable précédente dans l'ordre alphabétique">Le Soleil et les ...</a>
+&nbsp;
+				<a class="suiv" href="../livre-7/05-les-souhaits.html" title="fable suivante dans l'ordre alphabétique">Les Souhaits </a>
+			</div>
+		</div>
+</div>
+
+	</div>
+	<div class="six columns" id="sidebar">
+		<ul>
+	<li>
+		<h2>Fables du Livre XI</h2><ul>
+<li><a href="01-le-lion.html" title="La Fontaine, fable : Le Lion ">Le Lion </a></li><li><a href="02-les-dieux-voulant-instruire-un-fils-de-jupiter.html" title="La Fontaine, fable : Les Dieux voulant instruire un fils de Jupiter ">Les Dieux voulant instruire un fils de Jupiter </a></li><li><a href="03-le-fermier--le-chien--et-le-renard.html" title="La Fontaine, fable : Le Fermier, le Chien, et le Renard ">Le Fermier, le Chien, et le Renard </a></li><li><a href="04-le-songe-d-un-habitant-du-mogol.html" title="La Fontaine, fable : Le Songe d'un habitant du Mogol ">Le Songe d'un habitant du Mogol </a></li><li><a href="05-le-lion--le-singe--et-les-deux-anes.html" title="La Fontaine, fable : Le Lion, le Singe, et les deux Anes ">Le Lion, le Singe, et les deux Anes </a></li><li><a href="06-le-loup-et-le-renard.html" title="La Fontaine, fable : Le Loup et le Renard ">Le Loup et le Renard </a></li><li><a href="07-le-paysan-du-danube.html" title="La Fontaine, fable : Le Paysan du Danube ">Le Paysan du Danube </a></li><li><a href="08-le-vieillard-et-les-trois-jeunes-hommes.html" title="La Fontaine, fable : Le Vieillard et les trois jeunes Hommes ">Le Vieillard et les trois jeunes Hommes </a></li><li><a href="09-les-souris-et-le-chat-huant.html" title="La Fontaine, fable : Les Souris et le Chat-Huant ">Les Souris et le Chat-Huant </a></li></ul>
+</li>
+<li>
+				<h2>Tous les Livres</h2>
+				<p> <a href="../livre-1.html" title="Accès au livre I de La Fontaine">Livre I</a> | <a href="../livre-2.html" title="Accès au livre II de La Fontaine">Livre II</a> | <a href="../livre-3.html" title="Accès au livre III de La Fontaine">Livre III</a><br /> <a href="../livre-4.html" title="Accès au livre IV de La Fontaine">Livre IV</a> | <a href="../livre-5.html" title="Accès au livre V de La Fontaine">Livre V</a> | <a href="../livre-6.html" title="Accès au livre VI de La Fontaine">Livre VI</a><br /> <a href="../livre-7.html" title="Accès au livre VII de La Fontaine">Livre VII</a> | <a href="../livre-8.html" title="Accès au livre VIII de La Fontaine">Livre VIII</a> | <a href="../livre-9.html" title="Accès au livre IX de La Fontaine">Livre IX</a><br /> <a href="../livre-10.html" title="Accès au livre X de La Fontaine">Livre X</a> | <a href="../livre-11.html" title="Accès au livre XI de La Fontaine">Livre XI</a> | <a href="../livre-12.html" title="Accès au livre XII de La Fontaine">Livre XII</a><br /></p>
+			</li>
+</ul>
+
+	</div>
+	<div class="twelve columns offset-by-three" id="comments">
+			</div>
+	<div class="thirteen columns offset-by-three" id="pub2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0341259555352355";
+if(width >= 940){
+/* fables-bottom */
+	google_ad_slot = "9494263871";
+	google_ad_width = 728;
+	google_ad_height = 15;
+}else if (width >= 768){
+/* fables-bottom-mob1 */
+	google_ad_slot = "4453376256";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	
+}else {
+/* fables-bottom-mob2 */
+	google_ad_slot = "5930109455";
+	google_ad_width = 200;
+	google_ad_height = 90;
+	
+}
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="sixteen columns" id="footer">
+	<p>La Fontaine: www.mesfables.com Copyright © 2008-2014. | <a href="../sitemap.html">Plan du site</a> | <a href="http://www.panna-cotta.org/recette-panna-cotta.html" title="La recette de la pana cotta">Recette de Panna Cotta</a> </p>
+	</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
