@@ -49,7 +49,7 @@ def get_all_words(corpus):
         average_by_livre[livre] = int(statistics.mean(val))
     print(f'Moyenne par livre brute:\n{average_by_livre}')
     # Tri et print
-    sorted_my_dict(average_by_livre, 'Nombre de mots par livre')
+    sorted_plot_my_dict(average_by_livre, 'Nombre de mots par livre')
 
 def get_words_without_punkt(corpus):
     """Nombre de mots par fables sans ponctuation, dans un dict
@@ -73,10 +73,10 @@ def get_words_without_punkt(corpus):
         average_by_livre[livre] = int(statistics.mean(val))
     print(f'Moyenne par livre brute:\n{average_by_livre}')
     # Tri et print
-    sorted_my_dict(average_by_livre,
+    sorted_plot_my_dict(average_by_livre,
                     'Nombre de mots par livre sans ponctuation')
 
-def sorted_my_dict(my_dict, titre):
+def sorted_plot_my_dict(my_dict, titre):
     """Trie le dict sur les valeurs, print, et affichage de l'histogramme."""
 
     nb_mots = OrderedDict()
@@ -88,7 +88,7 @@ def sorted_my_dict(my_dict, titre):
 
     # Affichage des nombres de mots par livre
     df = pd.DataFrame.from_dict(nb_mots, orient='index')
-    df.plot(kind='bar', color="#f56900", title=titre)
+    df.plot(kind='bar', color="#FF00FF", title=titre)
     plt.show()
 
 def get_livre_assemblage(corpus):
@@ -117,13 +117,12 @@ def words_total(corpus):
     for livre, val in livres.items():
         corpora = tokenizer.tokenize(val.lower())
         freqs[livre] = nltk.FreqDist(corpora)
-        stats[livre] = {'total': len(val)}
+        stats[livre] = {'Nombre de mots au total': len(val)}
 
     # Affichage des nombres de mots par livre
     df = pd.DataFrame.from_dict(stats, orient='index')
-    # TODO pas de tri !
-    # #df.sort_index(axis=1, ascending=False)
-    df.plot(kind='bar', color="#f56900",
+    df = df.sort_values(by=['Nombre de mots au total'], ascending=False)
+    df.plot(kind='bar', color="#FF00FF",
             title='Nombre de mots par livre sans ponctuation')
     plt.show()
 
@@ -136,53 +135,20 @@ def words_frequency(corpus):
     tokenizer = nltk.RegexpTokenizer(r'\w+')
 
     for livre, val in livres.items():
-        corpora = tokenizer.tokenize(val.lower())
-        freqs[livre] = fq = nltk.FreqDist(corpora)
-        stats[livre] = {'total': len(val), 'unique': len(fq.keys())}
+        tokens = tokenizer.tokenize(val.lower())
+        freqs[livre] = fq = nltk.FreqDist(tokens)
+        stats[livre] = {'Nombre de mots au total': len(tokens),
+                        'Vocabulaire avec les mots courants': len(fq.keys())}
+
+        print(f'{livre}\nNombre de mots du vocabulaire au total {len(tokens)}\
+              \nNombre de mots avec les mots courants: {len(fq.keys())}')
 
     # Affichage des nombres de mots par livre
     df = pd.DataFrame.from_dict(stats, orient='index')
-    # TODO pas de tri !
-    # #df.sort_index(axis=1, ascending=False)
-    # TODO revoir couleur
-    df.plot(kind='bar', color="#f56900",
+    df = df.sort_values(by=['Nombre de mots au total'], ascending=False)
+    df.plot(kind='bar', color=["#FF00FF", "#FD6C9E"],
             title='Fréquence des mots par livre sans ponctuation')
     plt.show()
-
-def get_stopwords(text, number):
-    """Stopwords = mots très courants dans la langue
-    ("et", "à", "le"... en français) qui n'apportent pas de valeur informative.
-    Il seront supprimés du texte.
-
-    Aux stopwords 'french', seront ajoutés arbitrairement, les mots les plus
-    fréquents du texte.
-    """
-
-    tokenizer = nltk.RegexpTokenizer(r'\w+')
-    corpora = tokenizer.tokenize(text.lower())
-    freq = nltk.FreqDist(corpora)
-
-    most_freq = OrderedDict()
-    n = 0
-    for k in sorted(freq, key=freq.get, reverse=True):
-        if n < number:
-            most_freq[k] = freq[k]
-        n += 1
-    print("\n\nLes mots les plus fréquents:")
-    for k, v in most_freq.items():
-        print(f'    {k} {v}')
-    print("\n\n")
-
-    # Ajout des 2 stopwords: most_freq et stopwords 'french'
-    sw = set()
-    sw.update(most_freq)
-    sw.update(tuple(nltk.corpus.stopwords.words('french')))
-    print("Stopwords:")
-    print(f'    {sw}')
-    return sw
-
-def delete_most_frequency_words(text, sw):
-    pass
 
 def main():
 
@@ -191,10 +157,6 @@ def main():
     get_words_without_punkt(corpus)
     words_total(corpus)
     words_frequency(corpus)
-
-    # ## 20 = nombre de mots les plus fréquent qui ne seront pas retenu pour l'étude
-    # #sw = get_stopwords(corpus, 20)
-    # #delete_most_frequency_words(corpus, sw)
 
 
 if __name__ == "__main__":
