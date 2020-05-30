@@ -5,6 +5,12 @@ import os
 from pathlib import Path
 import json
 
+"""
+    corpus = { livre-1: {title: fable,
+                         title1: fable1},
+               livre-2: ...
+             }
+"""
 
 def write_data_in_file(data, fichier, mode="w"):
     with open(fichier, mode) as fd:
@@ -43,16 +49,27 @@ def read_file(file_name):
     return data
 
 def get_corpus():
+    """
+    corpus = { livre-1: {title: fable,
+                         title1: fable1},
+               livre-2: ...
+             }
+    """
+
     files = get_all_files_list("./fables_txt", [".txt"])
+    print(f'(Nombre de fables {len(files)}')
+
     corpus = {}
     for f in files:
         text = read_file(f)
         t = text.splitlines()
         livre = t[0]
         title = t[1]
-        fable = t[2:]
-        corpus[title] = [livre, fable]
-
+        fable = str(t[2:])
+        if not livre in corpus:
+            corpus[livre] = {}
+        corpus[livre][title] = fable
+    print(corpus)
     return corpus
 
 def main():
