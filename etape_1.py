@@ -34,14 +34,14 @@ def get_all_words(corpus):
     """
 
     nb_mots = {}
+    livres = get_livre_assemblage(corpus)
 
     # Recherche du nombre de mots par fable
-    for livre, val in corpus.items():
+    for livre, text in livres.items():
         if not livre in nb_mots:
             nb_mots[livre] = []
-        for title, fable in val.items():
-            mots_brut = nltk.word_tokenize(fable)
-            nb_mots[livre].append(len(mots_brut))
+        mots_brut = nltk.word_tokenize(text)
+        nb_mots[livre].append(len(mots_brut))
 
     # Calcul de la moyenne par livre
     average_by_livre = {}
@@ -58,14 +58,14 @@ def get_words_without_punkt(corpus):
 
     nb_mots = {}
     tokenizer = nltk.RegexpTokenizer(r'\w+')
+    livres = get_livre_assemblage(corpus)
 
     # Recherche du nombre de mots par fable
-    for livre, val in corpus.items():
+    for livre, text in livres.items():
         if not livre in nb_mots:
             nb_mots[livre] = []
-        for title, fable in val.items():
-            bons_mots = tokenizer.tokenize(fable.lower())
-            nb_mots[livre].append(len(bons_mots))
+        bons_mots = tokenizer.tokenize(text.lower())
+        nb_mots[livre].append(len(bons_mots))
 
     # Calcul de la moyenne par livre
     average_by_livre = {}
@@ -102,7 +102,7 @@ def get_livre_assemblage(corpus):
         if not livre in livres:
             livres[livre] = ""
         for title, fable in val.items():
-            livres[livre] += fable
+            livres[livre] += fable + "\n"
 
     return livres
 
@@ -114,10 +114,10 @@ def words_total(corpus):
     stats = {}
     tokenizer = nltk.RegexpTokenizer(r'\w+')
 
-    for livre, val in livres.items():
-        corpora = tokenizer.tokenize(val.lower())
+    for livre, text in livres.items():
+        corpora = tokenizer.tokenize(text.lower())
         freqs[livre] = nltk.FreqDist(corpora)
-        stats[livre] = {'Nombre de mots au total': len(val)}
+        stats[livre] = {'Nombre de mots au total': len(text)}
 
     # Affichage des nombres de mots par livre
     df = pd.DataFrame.from_dict(stats, orient='index')
@@ -134,8 +134,8 @@ def words_frequency(corpus):
     stats = {}
     tokenizer = nltk.RegexpTokenizer(r'\w+')
 
-    for livre, val in livres.items():
-        tokens = tokenizer.tokenize(val.lower())
+    for livre, text in livres.items():
+        tokens = tokenizer.tokenize(text.lower())
         freqs[livre] = fq = nltk.FreqDist(tokens)
         stats[livre] = {'Nombre de mots au total': len(tokens),
                         'Vocabulaire avec les mots courants': len(fq.keys())}

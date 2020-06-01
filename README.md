@@ -1,6 +1,5 @@
 # Text Processing and Machine Learning
 
-# text_processing
 Traitement Automatique du Langage TAL Apprendre avec des fables
 
 ### La documentation sur le wiki ressources.labomedia.org

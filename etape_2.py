@@ -36,11 +36,11 @@ def get_livre_assemblage(corpus):
              }
     """
     livres = {}
-    for livre, val in corpus.items():
+    for livre, text in corpus.items():
         if not livre in livres:
             livres[livre] = ""
-        for title, fable in val.items():
-            livres[livre] += fable
+        for title, fable in text.items():
+            livres[livre] += fable + "\n"
 
     return livres
 
@@ -103,8 +103,8 @@ def words_frequency_without_stopwords(corpus, sw):
     freqs_with, freqs_without, stats = {}, {}, {}
     tokenizer = nltk.RegexpTokenizer(r'\w+')
 
-    for livre, val in livres.items():
-        tokens = tokenizer.tokenize(val.lower())
+    for livre, text in livres.items():
+        tokens = tokenizer.tokenize(text.lower())
         freqs_with[livre] = fq_with = nltk.FreqDist(tokens)
         corpora = [w for w in tokens if w not in list(sw)]
         freqs_without[livre] = fq_without = nltk.FreqDist(corpora)
@@ -137,15 +137,15 @@ def racinisation(corpus, sw):
     tokenizer = nltk.RegexpTokenizer(r'\w+')
     stats, freq, corpora = {}, {}, {}
 
-    for livre, val in livres.items():
+    for livre, text in livres.items():
         if livre not in corpora:
             corpora[livre] = []
-        tokens = tokenizer.tokenize(val.lower())
+        tokens = tokenizer.tokenize(text.lower())
         corpora[livre] += [stemmer.stem(w) for w in tokens if not w in list(sw)]
 
-    for livre, val in corpora.items():
-        freq[livre] = fq = nltk.FreqDist(val)
-        stats[livre] = {'Nombre de mots au total': len(val),
+    for livre, text in corpora.items():
+        freq[livre] = fq = nltk.FreqDist(text)
+        stats[livre] = {'Nombre de mots au total': len(text),
                         'Après racinisation': len(fq.keys())}
 
     # Affichage des nombres de mots par livre
